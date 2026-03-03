@@ -1,0 +1,7 @@
+Dipcoin gRPC Protocol SDK for Sui
+Copyright 2025 Dipcoin LLC
+
+This product includes code derived from sui-rust-sdk (https://github.com/MystenLabs/sui-rust-sdk),
+licensed under the Apache License, Version 2.0.
+
+This product includes software developed by Mysten Labs, Inc.
