@@ -42,11 +42,13 @@
 
         <protobuf.version>3.25.3</protobuf.version>
         <grpc.version>1.62.2</grpc.version>
+
+        <javax.version>1.3.2</javax.version>
     </properties>
 
     <dependencies>
 
-        <!-- gRPC -->
+        <!-- gRPC core -->
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-protobuf</artifactId>
@@ -56,6 +58,26 @@
             <groupId>io.grpc</groupId>
             <artifactId>grpc-stub</artifactId>
             <version>${grpc.version}</version>
+        </dependency>
+
+        <!-- Protobuf well-known types (Timestamp, FieldMask, Duration, etc.) -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobuf.version}</version>
+        </dependency>
+
+        <!-- Google common protos (com.google.rpc.Status, ErrorDetails, etc.) -->
+        <dependency>
+            <groupId>com.google.api.grpc</groupId>
+            <artifactId>proto-google-common-protos</artifactId>
+            <version>2.29.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${javax.version}</version>
         </dependency>
 
     </dependencies>
@@ -135,16 +157,15 @@
                     </pluginArtifact>
                     <protoSourceRoot>${project.basedir}/src/main/resources/proto</protoSourceRoot>
                     <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
-                    <clearOutputDirectory>true</clearOutputDirectory>
                 </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>compile-custom</goal>
-                        </goals>
-                    </execution>
-                </executions>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>compile</goal>-->
+<!--                            <goal>compile-custom</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
             </plugin>
 
             <!-- Test coverage -->
