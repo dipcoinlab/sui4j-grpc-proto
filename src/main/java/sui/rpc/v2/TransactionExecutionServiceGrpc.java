@@ -12,32 +12,32 @@ public final class TransactionExecutionServiceGrpc {
 
   private TransactionExecutionServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "sui.rpc.v2.TransactionExecutionService";
+  public static final java.lang.String SERVICE_NAME = "sui.rpc.v2.TransactionExecutionService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<TransactionExecutionServiceOuterClass.ExecuteTransactionRequest,
-      TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> getExecuteTransactionMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest,
+      sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> getExecuteTransactionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ExecuteTransaction",
-      requestType = TransactionExecutionServiceOuterClass.ExecuteTransactionRequest.class,
-      responseType = TransactionExecutionServiceOuterClass.ExecuteTransactionResponse.class,
+      requestType = sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest.class,
+      responseType = sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<TransactionExecutionServiceOuterClass.ExecuteTransactionRequest,
-      TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> getExecuteTransactionMethod() {
-    io.grpc.MethodDescriptor<TransactionExecutionServiceOuterClass.ExecuteTransactionRequest, TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> getExecuteTransactionMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest,
+      sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> getExecuteTransactionMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest, sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> getExecuteTransactionMethod;
     if ((getExecuteTransactionMethod = TransactionExecutionServiceGrpc.getExecuteTransactionMethod) == null) {
       synchronized (TransactionExecutionServiceGrpc.class) {
         if ((getExecuteTransactionMethod = TransactionExecutionServiceGrpc.getExecuteTransactionMethod) == null) {
           TransactionExecutionServiceGrpc.getExecuteTransactionMethod = getExecuteTransactionMethod =
-              io.grpc.MethodDescriptor.<TransactionExecutionServiceOuterClass.ExecuteTransactionRequest, TransactionExecutionServiceOuterClass.ExecuteTransactionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest, sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ExecuteTransaction"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  TransactionExecutionServiceOuterClass.ExecuteTransactionRequest.getDefaultInstance()))
+                  sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  TransactionExecutionServiceOuterClass.ExecuteTransactionResponse.getDefaultInstance()))
+                  sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new TransactionExecutionServiceMethodDescriptorSupplier("ExecuteTransaction"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class TransactionExecutionServiceGrpc {
     return getExecuteTransactionMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<TransactionExecutionServiceOuterClass.SimulateTransactionRequest,
-      TransactionExecutionServiceOuterClass.SimulateTransactionResponse> getSimulateTransactionMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest,
+      sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse> getSimulateTransactionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SimulateTransaction",
-      requestType = TransactionExecutionServiceOuterClass.SimulateTransactionRequest.class,
-      responseType = TransactionExecutionServiceOuterClass.SimulateTransactionResponse.class,
+      requestType = sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest.class,
+      responseType = sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<TransactionExecutionServiceOuterClass.SimulateTransactionRequest,
-      TransactionExecutionServiceOuterClass.SimulateTransactionResponse> getSimulateTransactionMethod() {
-    io.grpc.MethodDescriptor<TransactionExecutionServiceOuterClass.SimulateTransactionRequest, TransactionExecutionServiceOuterClass.SimulateTransactionResponse> getSimulateTransactionMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest,
+      sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse> getSimulateTransactionMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest, sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse> getSimulateTransactionMethod;
     if ((getSimulateTransactionMethod = TransactionExecutionServiceGrpc.getSimulateTransactionMethod) == null) {
       synchronized (TransactionExecutionServiceGrpc.class) {
         if ((getSimulateTransactionMethod = TransactionExecutionServiceGrpc.getSimulateTransactionMethod) == null) {
           TransactionExecutionServiceGrpc.getSimulateTransactionMethod = getSimulateTransactionMethod =
-              io.grpc.MethodDescriptor.<TransactionExecutionServiceOuterClass.SimulateTransactionRequest, TransactionExecutionServiceOuterClass.SimulateTransactionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest, sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SimulateTransaction"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  TransactionExecutionServiceOuterClass.SimulateTransactionRequest.getDefaultInstance()))
+                  sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  TransactionExecutionServiceOuterClass.SimulateTransactionResponse.getDefaultInstance()))
+                  sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new TransactionExecutionServiceMethodDescriptorSupplier("SimulateTransaction"))
               .build();
         }
@@ -83,7 +83,7 @@ public final class TransactionExecutionServiceGrpc {
   public static TransactionExecutionServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TransactionExecutionServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TransactionExecutionServiceStub>() {
-        @Override
+        @java.lang.Override
         public TransactionExecutionServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TransactionExecutionServiceStub(channel, callOptions);
         }
@@ -98,7 +98,7 @@ public final class TransactionExecutionServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TransactionExecutionServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TransactionExecutionServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public TransactionExecutionServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TransactionExecutionServiceBlockingStub(channel, callOptions);
         }
@@ -113,7 +113,7 @@ public final class TransactionExecutionServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<TransactionExecutionServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<TransactionExecutionServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public TransactionExecutionServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new TransactionExecutionServiceFutureStub(channel, callOptions);
         }
@@ -127,15 +127,15 @@ public final class TransactionExecutionServiceGrpc {
 
     /**
      */
-    default void executeTransaction(TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request,
-                                    io.grpc.stub.StreamObserver<TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> responseObserver) {
+    default void executeTransaction(sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExecuteTransactionMethod(), responseObserver);
     }
 
     /**
      */
-    default void simulateTransaction(TransactionExecutionServiceOuterClass.SimulateTransactionRequest request,
-                                     io.grpc.stub.StreamObserver<TransactionExecutionServiceOuterClass.SimulateTransactionResponse> responseObserver) {
+    default void simulateTransaction(sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSimulateTransactionMethod(), responseObserver);
     }
   }
@@ -146,7 +146,7 @@ public final class TransactionExecutionServiceGrpc {
   public static abstract class TransactionExecutionServiceImplBase
       implements io.grpc.BindableService, AsyncService {
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return TransactionExecutionServiceGrpc.bindService(this);
     }
   }
@@ -161,7 +161,7 @@ public final class TransactionExecutionServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected TransactionExecutionServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TransactionExecutionServiceStub(channel, callOptions);
@@ -169,16 +169,16 @@ public final class TransactionExecutionServiceGrpc {
 
     /**
      */
-    public void executeTransaction(TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request,
-                                   io.grpc.stub.StreamObserver<TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> responseObserver) {
+    public void executeTransaction(sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExecuteTransactionMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void simulateTransaction(TransactionExecutionServiceOuterClass.SimulateTransactionRequest request,
-                                    io.grpc.stub.StreamObserver<TransactionExecutionServiceOuterClass.SimulateTransactionResponse> responseObserver) {
+    public void simulateTransaction(sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSimulateTransactionMethod(), getCallOptions()), request, responseObserver);
     }
@@ -194,7 +194,7 @@ public final class TransactionExecutionServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected TransactionExecutionServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TransactionExecutionServiceBlockingStub(channel, callOptions);
@@ -202,14 +202,14 @@ public final class TransactionExecutionServiceGrpc {
 
     /**
      */
-    public TransactionExecutionServiceOuterClass.ExecuteTransactionResponse executeTransaction(TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request) {
+    public sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse executeTransaction(sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExecuteTransactionMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public TransactionExecutionServiceOuterClass.SimulateTransactionResponse simulateTransaction(TransactionExecutionServiceOuterClass.SimulateTransactionRequest request) {
+    public sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse simulateTransaction(sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSimulateTransactionMethod(), getCallOptions(), request);
     }
@@ -225,7 +225,7 @@ public final class TransactionExecutionServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected TransactionExecutionServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new TransactionExecutionServiceFutureStub(channel, callOptions);
@@ -233,16 +233,16 @@ public final class TransactionExecutionServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> executeTransaction(
-        TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse> executeTransaction(
+        sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExecuteTransactionMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<TransactionExecutionServiceOuterClass.SimulateTransactionResponse> simulateTransaction(
-        TransactionExecutionServiceOuterClass.SimulateTransactionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse> simulateTransaction(
+        sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSimulateTransactionMethod(), getCallOptions()), request);
     }
@@ -264,25 +264,25 @@ public final class TransactionExecutionServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_EXECUTE_TRANSACTION:
-          serviceImpl.executeTransaction((TransactionExecutionServiceOuterClass.ExecuteTransactionRequest) request,
-              (io.grpc.stub.StreamObserver<TransactionExecutionServiceOuterClass.ExecuteTransactionResponse>) responseObserver);
+          serviceImpl.executeTransaction((sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse>) responseObserver);
           break;
         case METHODID_SIMULATE_TRANSACTION:
-          serviceImpl.simulateTransaction((TransactionExecutionServiceOuterClass.SimulateTransactionRequest) request,
-              (io.grpc.stub.StreamObserver<TransactionExecutionServiceOuterClass.SimulateTransactionResponse>) responseObserver);
+          serviceImpl.simulateTransaction((sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -298,15 +298,15 @@ public final class TransactionExecutionServiceGrpc {
           getExecuteTransactionMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              TransactionExecutionServiceOuterClass.ExecuteTransactionRequest,
-              TransactionExecutionServiceOuterClass.ExecuteTransactionResponse>(
+              sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionRequest,
+              sui.rpc.v2.TransactionExecutionServiceOuterClass.ExecuteTransactionResponse>(
                 service, METHODID_EXECUTE_TRANSACTION)))
         .addMethod(
           getSimulateTransactionMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              TransactionExecutionServiceOuterClass.SimulateTransactionRequest,
-              TransactionExecutionServiceOuterClass.SimulateTransactionResponse>(
+              sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionRequest,
+              sui.rpc.v2.TransactionExecutionServiceOuterClass.SimulateTransactionResponse>(
                 service, METHODID_SIMULATE_TRANSACTION)))
         .build();
   }
@@ -315,12 +315,12 @@ public final class TransactionExecutionServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     TransactionExecutionServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return TransactionExecutionServiceOuterClass.getDescriptor();
+      return sui.rpc.v2.TransactionExecutionServiceOuterClass.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("TransactionExecutionService");
     }
@@ -334,13 +334,13 @@ public final class TransactionExecutionServiceGrpc {
   private static final class TransactionExecutionServiceMethodDescriptorSupplier
       extends TransactionExecutionServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
+    private final java.lang.String methodName;
 
-    TransactionExecutionServiceMethodDescriptorSupplier(String methodName) {
+    TransactionExecutionServiceMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

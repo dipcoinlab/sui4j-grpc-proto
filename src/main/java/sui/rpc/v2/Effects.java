@@ -7723,6 +7723,775 @@ public final class Effects {
 
   }
 
+  public interface EventDigestEntryOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:sui.rpc.v2.EventDigestEntry)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * Index of the event within its transaction.
+     * </pre>
+     *
+     * <code>optional uint64 event_index = 1;</code>
+     * @return Whether the eventIndex field is set.
+     */
+    boolean hasEventIndex();
+    /**
+     * <pre>
+     * Index of the event within its transaction.
+     * </pre>
+     *
+     * <code>optional uint64 event_index = 1;</code>
+     * @return The eventIndex.
+     */
+    long getEventIndex();
+
+    /**
+     * <pre>
+     * Digest of the event.
+     * </pre>
+     *
+     * <code>optional string digest = 2;</code>
+     * @return Whether the digest field is set.
+     */
+    boolean hasDigest();
+    /**
+     * <pre>
+     * Digest of the event.
+     * </pre>
+     *
+     * <code>optional string digest = 2;</code>
+     * @return The digest.
+     */
+    java.lang.String getDigest();
+    /**
+     * <pre>
+     * Digest of the event.
+     * </pre>
+     *
+     * <code>optional string digest = 2;</code>
+     * @return The bytes for digest.
+     */
+    com.google.protobuf.ByteString
+        getDigestBytes();
+  }
+  /**
+   * <pre>
+   * An entry in an event digest accumulator value.
+   * </pre>
+   *
+   * Protobuf type {@code sui.rpc.v2.EventDigestEntry}
+   */
+  public static final class EventDigestEntry extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:sui.rpc.v2.EventDigestEntry)
+      EventDigestEntryOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use EventDigestEntry.newBuilder() to construct.
+    private EventDigestEntry(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private EventDigestEntry() {
+      digest_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new EventDigestEntry();
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return sui.rpc.v2.Effects.internal_static_sui_rpc_v2_EventDigestEntry_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return sui.rpc.v2.Effects.internal_static_sui_rpc_v2_EventDigestEntry_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              sui.rpc.v2.Effects.EventDigestEntry.class, sui.rpc.v2.Effects.EventDigestEntry.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int EVENT_INDEX_FIELD_NUMBER = 1;
+    private long eventIndex_ = 0L;
+    /**
+     * <pre>
+     * Index of the event within its transaction.
+     * </pre>
+     *
+     * <code>optional uint64 event_index = 1;</code>
+     * @return Whether the eventIndex field is set.
+     */
+    @java.lang.Override
+    public boolean hasEventIndex() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <pre>
+     * Index of the event within its transaction.
+     * </pre>
+     *
+     * <code>optional uint64 event_index = 1;</code>
+     * @return The eventIndex.
+     */
+    @java.lang.Override
+    public long getEventIndex() {
+      return eventIndex_;
+    }
+
+    public static final int DIGEST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object digest_ = "";
+    /**
+     * <pre>
+     * Digest of the event.
+     * </pre>
+     *
+     * <code>optional string digest = 2;</code>
+     * @return Whether the digest field is set.
+     */
+    @java.lang.Override
+    public boolean hasDigest() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <pre>
+     * Digest of the event.
+     * </pre>
+     *
+     * <code>optional string digest = 2;</code>
+     * @return The digest.
+     */
+    @java.lang.Override
+    public java.lang.String getDigest() {
+      java.lang.Object ref = digest_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        digest_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * Digest of the event.
+     * </pre>
+     *
+     * <code>optional string digest = 2;</code>
+     * @return The bytes for digest.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDigestBytes() {
+      java.lang.Object ref = digest_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        digest_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeUInt64(1, eventIndex_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, digest_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(1, eventIndex_);
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, digest_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof sui.rpc.v2.Effects.EventDigestEntry)) {
+        return super.equals(obj);
+      }
+      sui.rpc.v2.Effects.EventDigestEntry other = (sui.rpc.v2.Effects.EventDigestEntry) obj;
+
+      if (hasEventIndex() != other.hasEventIndex()) return false;
+      if (hasEventIndex()) {
+        if (getEventIndex()
+            != other.getEventIndex()) return false;
+      }
+      if (hasDigest() != other.hasDigest()) return false;
+      if (hasDigest()) {
+        if (!getDigest()
+            .equals(other.getDigest())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasEventIndex()) {
+        hash = (37 * hash) + EVENT_INDEX_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getEventIndex());
+      }
+      if (hasDigest()) {
+        hash = (37 * hash) + DIGEST_FIELD_NUMBER;
+        hash = (53 * hash) + getDigest().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static sui.rpc.v2.Effects.EventDigestEntry parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static sui.rpc.v2.Effects.EventDigestEntry parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static sui.rpc.v2.Effects.EventDigestEntry parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(sui.rpc.v2.Effects.EventDigestEntry prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * An entry in an event digest accumulator value.
+     * </pre>
+     *
+     * Protobuf type {@code sui.rpc.v2.EventDigestEntry}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:sui.rpc.v2.EventDigestEntry)
+        sui.rpc.v2.Effects.EventDigestEntryOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return sui.rpc.v2.Effects.internal_static_sui_rpc_v2_EventDigestEntry_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return sui.rpc.v2.Effects.internal_static_sui_rpc_v2_EventDigestEntry_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                sui.rpc.v2.Effects.EventDigestEntry.class, sui.rpc.v2.Effects.EventDigestEntry.Builder.class);
+      }
+
+      // Construct using sui.rpc.v2.Effects.EventDigestEntry.newBuilder()
+      private Builder() {
+
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        eventIndex_ = 0L;
+        digest_ = "";
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return sui.rpc.v2.Effects.internal_static_sui_rpc_v2_EventDigestEntry_descriptor;
+      }
+
+      @java.lang.Override
+      public sui.rpc.v2.Effects.EventDigestEntry getDefaultInstanceForType() {
+        return sui.rpc.v2.Effects.EventDigestEntry.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public sui.rpc.v2.Effects.EventDigestEntry build() {
+        sui.rpc.v2.Effects.EventDigestEntry result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public sui.rpc.v2.Effects.EventDigestEntry buildPartial() {
+        sui.rpc.v2.Effects.EventDigestEntry result = new sui.rpc.v2.Effects.EventDigestEntry(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(sui.rpc.v2.Effects.EventDigestEntry result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.eventIndex_ = eventIndex_;
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.digest_ = digest_;
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof sui.rpc.v2.Effects.EventDigestEntry) {
+          return mergeFrom((sui.rpc.v2.Effects.EventDigestEntry)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(sui.rpc.v2.Effects.EventDigestEntry other) {
+        if (other == sui.rpc.v2.Effects.EventDigestEntry.getDefaultInstance()) return this;
+        if (other.hasEventIndex()) {
+          setEventIndex(other.getEventIndex());
+        }
+        if (other.hasDigest()) {
+          digest_ = other.digest_;
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                eventIndex_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 18: {
+                digest_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private long eventIndex_ ;
+      /**
+       * <pre>
+       * Index of the event within its transaction.
+       * </pre>
+       *
+       * <code>optional uint64 event_index = 1;</code>
+       * @return Whether the eventIndex field is set.
+       */
+      @java.lang.Override
+      public boolean hasEventIndex() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <pre>
+       * Index of the event within its transaction.
+       * </pre>
+       *
+       * <code>optional uint64 event_index = 1;</code>
+       * @return The eventIndex.
+       */
+      @java.lang.Override
+      public long getEventIndex() {
+        return eventIndex_;
+      }
+      /**
+       * <pre>
+       * Index of the event within its transaction.
+       * </pre>
+       *
+       * <code>optional uint64 event_index = 1;</code>
+       * @param value The eventIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEventIndex(long value) {
+
+        eventIndex_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Index of the event within its transaction.
+       * </pre>
+       *
+       * <code>optional uint64 event_index = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEventIndex() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        eventIndex_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object digest_ = "";
+      /**
+       * <pre>
+       * Digest of the event.
+       * </pre>
+       *
+       * <code>optional string digest = 2;</code>
+       * @return Whether the digest field is set.
+       */
+      public boolean hasDigest() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <pre>
+       * Digest of the event.
+       * </pre>
+       *
+       * <code>optional string digest = 2;</code>
+       * @return The digest.
+       */
+      public java.lang.String getDigest() {
+        java.lang.Object ref = digest_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          digest_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Digest of the event.
+       * </pre>
+       *
+       * <code>optional string digest = 2;</code>
+       * @return The bytes for digest.
+       */
+      public com.google.protobuf.ByteString
+          getDigestBytes() {
+        java.lang.Object ref = digest_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          digest_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * Digest of the event.
+       * </pre>
+       *
+       * <code>optional string digest = 2;</code>
+       * @param value The digest to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDigest(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        digest_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Digest of the event.
+       * </pre>
+       *
+       * <code>optional string digest = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDigest() {
+        digest_ = getDefaultInstance().getDigest();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Digest of the event.
+       * </pre>
+       *
+       * <code>optional string digest = 2;</code>
+       * @param value The bytes for digest to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDigestBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        digest_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:sui.rpc.v2.EventDigestEntry)
+    }
+
+    // @@protoc_insertion_point(class_scope:sui.rpc.v2.EventDigestEntry)
+    private static final sui.rpc.v2.Effects.EventDigestEntry DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new sui.rpc.v2.Effects.EventDigestEntry();
+    }
+
+    public static sui.rpc.v2.Effects.EventDigestEntry getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<EventDigestEntry>
+        PARSER = new com.google.protobuf.AbstractParser<EventDigestEntry>() {
+      @java.lang.Override
+      public EventDigestEntry parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<EventDigestEntry> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<EventDigestEntry> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public sui.rpc.v2.Effects.EventDigestEntry getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface AccumulatorWriteOrBuilder extends
       // @@protoc_insertion_point(interface_extends:sui.rpc.v2.AccumulatorWrite)
       com.google.protobuf.MessageOrBuilder {
@@ -7778,15 +8547,125 @@ public final class Effects {
     sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorOperation getOperation();
 
     /**
-     * <code>optional uint64 value = 5;</code>
-     * @return Whether the value field is set.
+     * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+     * @return Whether the valueKind field is set.
      */
-    boolean hasValue();
+    boolean hasValueKind();
     /**
-     * <code>optional uint64 value = 5;</code>
-     * @return The value.
+     * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+     * @return The enum numeric value on the wire for valueKind.
      */
-    long getValue();
+    int getValueKindValue();
+    /**
+     * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+     * @return The valueKind.
+     */
+    sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue getValueKind();
+
+    /**
+     * <pre>
+     * Set when the accumulator value is an integer (value_kind = INTEGER).
+     * </pre>
+     *
+     * <code>optional uint64 integer_value = 5;</code>
+     * @return Whether the integerValue field is set.
+     */
+    boolean hasIntegerValue();
+    /**
+     * <pre>
+     * Set when the accumulator value is an integer (value_kind = INTEGER).
+     * </pre>
+     *
+     * <code>optional uint64 integer_value = 5;</code>
+     * @return The integerValue.
+     */
+    long getIntegerValue();
+
+    /**
+     * <pre>
+     * Set, with len 2, when the accumulator value is an integer tuple
+     * (value_kind = INTEGER_TUPLE).
+     * </pre>
+     *
+     * <code>repeated uint64 integer_tuple = 6;</code>
+     * @return A list containing the integerTuple.
+     */
+    java.util.List<java.lang.Long> getIntegerTupleList();
+    /**
+     * <pre>
+     * Set, with len 2, when the accumulator value is an integer tuple
+     * (value_kind = INTEGER_TUPLE).
+     * </pre>
+     *
+     * <code>repeated uint64 integer_tuple = 6;</code>
+     * @return The count of integerTuple.
+     */
+    int getIntegerTupleCount();
+    /**
+     * <pre>
+     * Set, with len 2, when the accumulator value is an integer tuple
+     * (value_kind = INTEGER_TUPLE).
+     * </pre>
+     *
+     * <code>repeated uint64 integer_tuple = 6;</code>
+     * @param index The index of the element to return.
+     * @return The integerTuple at the given index.
+     */
+    long getIntegerTuple(int index);
+
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    java.util.List<sui.rpc.v2.Effects.EventDigestEntry> 
+        getEventDigestValueList();
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    sui.rpc.v2.Effects.EventDigestEntry getEventDigestValue(int index);
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    int getEventDigestValueCount();
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    java.util.List<? extends sui.rpc.v2.Effects.EventDigestEntryOrBuilder> 
+        getEventDigestValueOrBuilderList();
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    sui.rpc.v2.Effects.EventDigestEntryOrBuilder getEventDigestValueOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code sui.rpc.v2.AccumulatorWrite}
@@ -7804,6 +8683,9 @@ public final class Effects {
       address_ = "";
       accumulatorType_ = "";
       operation_ = 0;
+      valueKind_ = 0;
+      integerTuple_ = emptyLongList();
+      eventDigestValue_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -7943,6 +8825,132 @@ public final class Effects {
       // @@protoc_insertion_point(enum_scope:sui.rpc.v2.AccumulatorWrite.AccumulatorOperation)
     }
 
+    /**
+     * Protobuf enum {@code sui.rpc.v2.AccumulatorWrite.AccumulatorValue}
+     */
+    public enum AccumulatorValue
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>ACCUMULATOR_VALUE_UNKNOWN = 0;</code>
+       */
+      ACCUMULATOR_VALUE_UNKNOWN(0),
+      /**
+       * <code>INTEGER = 1;</code>
+       */
+      INTEGER(1),
+      /**
+       * <code>INTEGER_TUPLE = 2;</code>
+       */
+      INTEGER_TUPLE(2),
+      /**
+       * <code>EVENT_DIGEST = 3;</code>
+       */
+      EVENT_DIGEST(3),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>ACCUMULATOR_VALUE_UNKNOWN = 0;</code>
+       */
+      public static final int ACCUMULATOR_VALUE_UNKNOWN_VALUE = 0;
+      /**
+       * <code>INTEGER = 1;</code>
+       */
+      public static final int INTEGER_VALUE = 1;
+      /**
+       * <code>INTEGER_TUPLE = 2;</code>
+       */
+      public static final int INTEGER_TUPLE_VALUE = 2;
+      /**
+       * <code>EVENT_DIGEST = 3;</code>
+       */
+      public static final int EVENT_DIGEST_VALUE = 3;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static AccumulatorValue valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static AccumulatorValue forNumber(int value) {
+        switch (value) {
+          case 0: return ACCUMULATOR_VALUE_UNKNOWN;
+          case 1: return INTEGER;
+          case 2: return INTEGER_TUPLE;
+          case 3: return EVENT_DIGEST;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<AccumulatorValue>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          AccumulatorValue> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<AccumulatorValue>() {
+              public AccumulatorValue findValueByNumber(int number) {
+                return AccumulatorValue.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return sui.rpc.v2.Effects.AccumulatorWrite.getDescriptor().getEnumTypes().get(1);
+      }
+
+      private static final AccumulatorValue[] VALUES = values();
+
+      public static AccumulatorValue valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private AccumulatorValue(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:sui.rpc.v2.AccumulatorWrite.AccumulatorValue)
+    }
+
     private int bitField0_;
     public static final int ADDRESS_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
@@ -8063,23 +9071,172 @@ public final class Effects {
       return result == null ? sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorOperation.UNRECOGNIZED : result;
     }
 
-    public static final int VALUE_FIELD_NUMBER = 5;
-    private long value_ = 0L;
+    public static final int VALUE_KIND_FIELD_NUMBER = 4;
+    private int valueKind_ = 0;
     /**
-     * <code>optional uint64 value = 5;</code>
-     * @return Whether the value field is set.
+     * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+     * @return Whether the valueKind field is set.
      */
-    @java.lang.Override
-    public boolean hasValue() {
+    @java.lang.Override public boolean hasValueKind() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
-     * <code>optional uint64 value = 5;</code>
-     * @return The value.
+     * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+     * @return The enum numeric value on the wire for valueKind.
+     */
+    @java.lang.Override public int getValueKindValue() {
+      return valueKind_;
+    }
+    /**
+     * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+     * @return The valueKind.
+     */
+    @java.lang.Override public sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue getValueKind() {
+      sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue result = sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue.forNumber(valueKind_);
+      return result == null ? sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue.UNRECOGNIZED : result;
+    }
+
+    public static final int INTEGER_VALUE_FIELD_NUMBER = 5;
+    private long integerValue_ = 0L;
+    /**
+     * <pre>
+     * Set when the accumulator value is an integer (value_kind = INTEGER).
+     * </pre>
+     *
+     * <code>optional uint64 integer_value = 5;</code>
+     * @return Whether the integerValue field is set.
      */
     @java.lang.Override
-    public long getValue() {
-      return value_;
+    public boolean hasIntegerValue() {
+      return ((bitField0_ & 0x00000010) != 0);
+    }
+    /**
+     * <pre>
+     * Set when the accumulator value is an integer (value_kind = INTEGER).
+     * </pre>
+     *
+     * <code>optional uint64 integer_value = 5;</code>
+     * @return The integerValue.
+     */
+    @java.lang.Override
+    public long getIntegerValue() {
+      return integerValue_;
+    }
+
+    public static final int INTEGER_TUPLE_FIELD_NUMBER = 6;
+    @SuppressWarnings("serial")
+    private com.google.protobuf.Internal.LongList integerTuple_ =
+        emptyLongList();
+    /**
+     * <pre>
+     * Set, with len 2, when the accumulator value is an integer tuple
+     * (value_kind = INTEGER_TUPLE).
+     * </pre>
+     *
+     * <code>repeated uint64 integer_tuple = 6;</code>
+     * @return A list containing the integerTuple.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Long>
+        getIntegerTupleList() {
+      return integerTuple_;
+    }
+    /**
+     * <pre>
+     * Set, with len 2, when the accumulator value is an integer tuple
+     * (value_kind = INTEGER_TUPLE).
+     * </pre>
+     *
+     * <code>repeated uint64 integer_tuple = 6;</code>
+     * @return The count of integerTuple.
+     */
+    public int getIntegerTupleCount() {
+      return integerTuple_.size();
+    }
+    /**
+     * <pre>
+     * Set, with len 2, when the accumulator value is an integer tuple
+     * (value_kind = INTEGER_TUPLE).
+     * </pre>
+     *
+     * <code>repeated uint64 integer_tuple = 6;</code>
+     * @param index The index of the element to return.
+     * @return The integerTuple at the given index.
+     */
+    public long getIntegerTuple(int index) {
+      return integerTuple_.getLong(index);
+    }
+    private int integerTupleMemoizedSerializedSize = -1;
+
+    public static final int EVENT_DIGEST_VALUE_FIELD_NUMBER = 7;
+    @SuppressWarnings("serial")
+    private java.util.List<sui.rpc.v2.Effects.EventDigestEntry> eventDigestValue_;
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<sui.rpc.v2.Effects.EventDigestEntry> getEventDigestValueList() {
+      return eventDigestValue_;
+    }
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends sui.rpc.v2.Effects.EventDigestEntryOrBuilder> 
+        getEventDigestValueOrBuilderList() {
+      return eventDigestValue_;
+    }
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    @java.lang.Override
+    public int getEventDigestValueCount() {
+      return eventDigestValue_.size();
+    }
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    @java.lang.Override
+    public sui.rpc.v2.Effects.EventDigestEntry getEventDigestValue(int index) {
+      return eventDigestValue_.get(index);
+    }
+    /**
+     * <pre>
+     * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+     * Contains a non-empty list of (event_index, digest) pairs representing
+     * authenticated event stream entries within a transaction.
+     * </pre>
+     *
+     * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+     */
+    @java.lang.Override
+    public sui.rpc.v2.Effects.EventDigestEntryOrBuilder getEventDigestValueOrBuilder(
+        int index) {
+      return eventDigestValue_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -8096,6 +9253,7 @@ public final class Effects {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      getSerializedSize();
       if (((bitField0_ & 0x00000001) != 0)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, address_);
       }
@@ -8106,7 +9264,20 @@ public final class Effects {
         output.writeEnum(3, operation_);
       }
       if (((bitField0_ & 0x00000008) != 0)) {
-        output.writeUInt64(5, value_);
+        output.writeEnum(4, valueKind_);
+      }
+      if (((bitField0_ & 0x00000010) != 0)) {
+        output.writeUInt64(5, integerValue_);
+      }
+      if (getIntegerTupleList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(integerTupleMemoizedSerializedSize);
+      }
+      for (int i = 0; i < integerTuple_.size(); i++) {
+        output.writeUInt64NoTag(integerTuple_.getLong(i));
+      }
+      for (int i = 0; i < eventDigestValue_.size(); i++) {
+        output.writeMessage(7, eventDigestValue_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -8129,7 +9300,29 @@ public final class Effects {
       }
       if (((bitField0_ & 0x00000008) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, value_);
+          .computeEnumSize(4, valueKind_);
+      }
+      if (((bitField0_ & 0x00000010) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(5, integerValue_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < integerTuple_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt64SizeNoTag(integerTuple_.getLong(i));
+        }
+        size += dataSize;
+        if (!getIntegerTupleList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        integerTupleMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < eventDigestValue_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, eventDigestValue_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -8160,11 +9353,19 @@ public final class Effects {
       if (hasOperation()) {
         if (operation_ != other.operation_) return false;
       }
-      if (hasValue() != other.hasValue()) return false;
-      if (hasValue()) {
-        if (getValue()
-            != other.getValue()) return false;
+      if (hasValueKind() != other.hasValueKind()) return false;
+      if (hasValueKind()) {
+        if (valueKind_ != other.valueKind_) return false;
       }
+      if (hasIntegerValue() != other.hasIntegerValue()) return false;
+      if (hasIntegerValue()) {
+        if (getIntegerValue()
+            != other.getIntegerValue()) return false;
+      }
+      if (!getIntegerTupleList()
+          .equals(other.getIntegerTupleList())) return false;
+      if (!getEventDigestValueList()
+          .equals(other.getEventDigestValueList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -8188,10 +9389,22 @@ public final class Effects {
         hash = (37 * hash) + OPERATION_FIELD_NUMBER;
         hash = (53 * hash) + operation_;
       }
-      if (hasValue()) {
-        hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      if (hasValueKind()) {
+        hash = (37 * hash) + VALUE_KIND_FIELD_NUMBER;
+        hash = (53 * hash) + valueKind_;
+      }
+      if (hasIntegerValue()) {
+        hash = (37 * hash) + INTEGER_VALUE_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getValue());
+            getIntegerValue());
+      }
+      if (getIntegerTupleCount() > 0) {
+        hash = (37 * hash) + INTEGER_TUPLE_FIELD_NUMBER;
+        hash = (53 * hash) + getIntegerTupleList().hashCode();
+      }
+      if (getEventDigestValueCount() > 0) {
+        hash = (37 * hash) + EVENT_DIGEST_VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + getEventDigestValueList().hashCode();
       }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
@@ -8327,7 +9540,16 @@ public final class Effects {
         address_ = "";
         accumulatorType_ = "";
         operation_ = 0;
-        value_ = 0L;
+        valueKind_ = 0;
+        integerValue_ = 0L;
+        integerTuple_ = emptyLongList();
+        if (eventDigestValueBuilder_ == null) {
+          eventDigestValue_ = java.util.Collections.emptyList();
+        } else {
+          eventDigestValue_ = null;
+          eventDigestValueBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
 
@@ -8354,9 +9576,22 @@ public final class Effects {
       @java.lang.Override
       public sui.rpc.v2.Effects.AccumulatorWrite buildPartial() {
         sui.rpc.v2.Effects.AccumulatorWrite result = new sui.rpc.v2.Effects.AccumulatorWrite(this);
+        buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(sui.rpc.v2.Effects.AccumulatorWrite result) {
+        if (eventDigestValueBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) != 0)) {
+            eventDigestValue_ = java.util.Collections.unmodifiableList(eventDigestValue_);
+            bitField0_ = (bitField0_ & ~0x00000040);
+          }
+          result.eventDigestValue_ = eventDigestValue_;
+        } else {
+          result.eventDigestValue_ = eventDigestValueBuilder_.build();
+        }
       }
 
       private void buildPartial0(sui.rpc.v2.Effects.AccumulatorWrite result) {
@@ -8375,8 +9610,16 @@ public final class Effects {
           to_bitField0_ |= 0x00000004;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.value_ = value_;
+          result.valueKind_ = valueKind_;
           to_bitField0_ |= 0x00000008;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.integerValue_ = integerValue_;
+          to_bitField0_ |= 0x00000010;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          integerTuple_.makeImmutable();
+          result.integerTuple_ = integerTuple_;
         }
         result.bitField0_ |= to_bitField0_;
       }
@@ -8438,8 +9681,48 @@ public final class Effects {
         if (other.hasOperation()) {
           setOperation(other.getOperation());
         }
-        if (other.hasValue()) {
-          setValue(other.getValue());
+        if (other.hasValueKind()) {
+          setValueKind(other.getValueKind());
+        }
+        if (other.hasIntegerValue()) {
+          setIntegerValue(other.getIntegerValue());
+        }
+        if (!other.integerTuple_.isEmpty()) {
+          if (integerTuple_.isEmpty()) {
+            integerTuple_ = other.integerTuple_;
+            integerTuple_.makeImmutable();
+            bitField0_ |= 0x00000020;
+          } else {
+            ensureIntegerTupleIsMutable();
+            integerTuple_.addAll(other.integerTuple_);
+          }
+          onChanged();
+        }
+        if (eventDigestValueBuilder_ == null) {
+          if (!other.eventDigestValue_.isEmpty()) {
+            if (eventDigestValue_.isEmpty()) {
+              eventDigestValue_ = other.eventDigestValue_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+            } else {
+              ensureEventDigestValueIsMutable();
+              eventDigestValue_.addAll(other.eventDigestValue_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.eventDigestValue_.isEmpty()) {
+            if (eventDigestValueBuilder_.isEmpty()) {
+              eventDigestValueBuilder_.dispose();
+              eventDigestValueBuilder_ = null;
+              eventDigestValue_ = other.eventDigestValue_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+              eventDigestValueBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getEventDigestValueFieldBuilder() : null;
+            } else {
+              eventDigestValueBuilder_.addAllMessages(other.eventDigestValue_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -8482,11 +9765,45 @@ public final class Effects {
                 bitField0_ |= 0x00000004;
                 break;
               } // case 24
-              case 40: {
-                value_ = input.readUInt64();
+              case 32: {
+                valueKind_ = input.readEnum();
                 bitField0_ |= 0x00000008;
                 break;
+              } // case 32
+              case 40: {
+                integerValue_ = input.readUInt64();
+                bitField0_ |= 0x00000010;
+                break;
               } // case 40
+              case 48: {
+                long v = input.readUInt64();
+                ensureIntegerTupleIsMutable();
+                integerTuple_.addLong(v);
+                break;
+              } // case 48
+              case 50: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureIntegerTupleIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  integerTuple_.addLong(input.readUInt64());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 50
+              case 58: {
+                sui.rpc.v2.Effects.EventDigestEntry m =
+                    input.readMessage(
+                        sui.rpc.v2.Effects.EventDigestEntry.parser(),
+                        extensionRegistry);
+                if (eventDigestValueBuilder_ == null) {
+                  ensureEventDigestValueIsMutable();
+                  eventDigestValue_.add(m);
+                } else {
+                  eventDigestValueBuilder_.addMessage(m);
+                }
+                break;
+              } // case 58
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -8722,44 +10039,587 @@ public final class Effects {
         return this;
       }
 
-      private long value_ ;
+      private int valueKind_ = 0;
       /**
-       * <code>optional uint64 value = 5;</code>
-       * @return Whether the value field is set.
+       * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+       * @return Whether the valueKind field is set.
        */
-      @java.lang.Override
-      public boolean hasValue() {
+      @java.lang.Override public boolean hasValueKind() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
-       * <code>optional uint64 value = 5;</code>
-       * @return The value.
+       * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+       * @return The enum numeric value on the wire for valueKind.
        */
-      @java.lang.Override
-      public long getValue() {
-        return value_;
+      @java.lang.Override public int getValueKindValue() {
+        return valueKind_;
       }
       /**
-       * <code>optional uint64 value = 5;</code>
-       * @param value The value to set.
+       * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+       * @param value The enum numeric value on the wire for valueKind to set.
        * @return This builder for chaining.
        */
-      public Builder setValue(long value) {
-
-        value_ = value;
+      public Builder setValueKindValue(int value) {
+        valueKind_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>optional uint64 value = 5;</code>
+       * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+       * @return The valueKind.
+       */
+      @java.lang.Override
+      public sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue getValueKind() {
+        sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue result = sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue.forNumber(valueKind_);
+        return result == null ? sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+       * @param value The valueKind to set.
        * @return This builder for chaining.
        */
-      public Builder clearValue() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        value_ = 0L;
+      public Builder setValueKind(sui.rpc.v2.Effects.AccumulatorWrite.AccumulatorValue value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000008;
+        valueKind_ = value.getNumber();
         onChanged();
         return this;
+      }
+      /**
+       * <code>optional .sui.rpc.v2.AccumulatorWrite.AccumulatorValue value_kind = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearValueKind() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        valueKind_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long integerValue_ ;
+      /**
+       * <pre>
+       * Set when the accumulator value is an integer (value_kind = INTEGER).
+       * </pre>
+       *
+       * <code>optional uint64 integer_value = 5;</code>
+       * @return Whether the integerValue field is set.
+       */
+      @java.lang.Override
+      public boolean hasIntegerValue() {
+        return ((bitField0_ & 0x00000010) != 0);
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an integer (value_kind = INTEGER).
+       * </pre>
+       *
+       * <code>optional uint64 integer_value = 5;</code>
+       * @return The integerValue.
+       */
+      @java.lang.Override
+      public long getIntegerValue() {
+        return integerValue_;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an integer (value_kind = INTEGER).
+       * </pre>
+       *
+       * <code>optional uint64 integer_value = 5;</code>
+       * @param value The integerValue to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIntegerValue(long value) {
+
+        integerValue_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an integer (value_kind = INTEGER).
+       * </pre>
+       *
+       * <code>optional uint64 integer_value = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIntegerValue() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        integerValue_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList integerTuple_ = emptyLongList();
+      private void ensureIntegerTupleIsMutable() {
+        if (!integerTuple_.isModifiable()) {
+          integerTuple_ = makeMutableCopy(integerTuple_);
+        }
+        bitField0_ |= 0x00000020;
+      }
+      /**
+       * <pre>
+       * Set, with len 2, when the accumulator value is an integer tuple
+       * (value_kind = INTEGER_TUPLE).
+       * </pre>
+       *
+       * <code>repeated uint64 integer_tuple = 6;</code>
+       * @return A list containing the integerTuple.
+       */
+      public java.util.List<java.lang.Long>
+          getIntegerTupleList() {
+        integerTuple_.makeImmutable();
+        return integerTuple_;
+      }
+      /**
+       * <pre>
+       * Set, with len 2, when the accumulator value is an integer tuple
+       * (value_kind = INTEGER_TUPLE).
+       * </pre>
+       *
+       * <code>repeated uint64 integer_tuple = 6;</code>
+       * @return The count of integerTuple.
+       */
+      public int getIntegerTupleCount() {
+        return integerTuple_.size();
+      }
+      /**
+       * <pre>
+       * Set, with len 2, when the accumulator value is an integer tuple
+       * (value_kind = INTEGER_TUPLE).
+       * </pre>
+       *
+       * <code>repeated uint64 integer_tuple = 6;</code>
+       * @param index The index of the element to return.
+       * @return The integerTuple at the given index.
+       */
+      public long getIntegerTuple(int index) {
+        return integerTuple_.getLong(index);
+      }
+      /**
+       * <pre>
+       * Set, with len 2, when the accumulator value is an integer tuple
+       * (value_kind = INTEGER_TUPLE).
+       * </pre>
+       *
+       * <code>repeated uint64 integer_tuple = 6;</code>
+       * @param index The index to set the value at.
+       * @param value The integerTuple to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIntegerTuple(
+          int index, long value) {
+
+        ensureIntegerTupleIsMutable();
+        integerTuple_.setLong(index, value);
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Set, with len 2, when the accumulator value is an integer tuple
+       * (value_kind = INTEGER_TUPLE).
+       * </pre>
+       *
+       * <code>repeated uint64 integer_tuple = 6;</code>
+       * @param value The integerTuple to add.
+       * @return This builder for chaining.
+       */
+      public Builder addIntegerTuple(long value) {
+
+        ensureIntegerTupleIsMutable();
+        integerTuple_.addLong(value);
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Set, with len 2, when the accumulator value is an integer tuple
+       * (value_kind = INTEGER_TUPLE).
+       * </pre>
+       *
+       * <code>repeated uint64 integer_tuple = 6;</code>
+       * @param values The integerTuple to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllIntegerTuple(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureIntegerTupleIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, integerTuple_);
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * Set, with len 2, when the accumulator value is an integer tuple
+       * (value_kind = INTEGER_TUPLE).
+       * </pre>
+       *
+       * <code>repeated uint64 integer_tuple = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIntegerTuple() {
+        integerTuple_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000020);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<sui.rpc.v2.Effects.EventDigestEntry> eventDigestValue_ =
+        java.util.Collections.emptyList();
+      private void ensureEventDigestValueIsMutable() {
+        if (!((bitField0_ & 0x00000040) != 0)) {
+          eventDigestValue_ = new java.util.ArrayList<sui.rpc.v2.Effects.EventDigestEntry>(eventDigestValue_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          sui.rpc.v2.Effects.EventDigestEntry, sui.rpc.v2.Effects.EventDigestEntry.Builder, sui.rpc.v2.Effects.EventDigestEntryOrBuilder> eventDigestValueBuilder_;
+
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public java.util.List<sui.rpc.v2.Effects.EventDigestEntry> getEventDigestValueList() {
+        if (eventDigestValueBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(eventDigestValue_);
+        } else {
+          return eventDigestValueBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public int getEventDigestValueCount() {
+        if (eventDigestValueBuilder_ == null) {
+          return eventDigestValue_.size();
+        } else {
+          return eventDigestValueBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public sui.rpc.v2.Effects.EventDigestEntry getEventDigestValue(int index) {
+        if (eventDigestValueBuilder_ == null) {
+          return eventDigestValue_.get(index);
+        } else {
+          return eventDigestValueBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder setEventDigestValue(
+          int index, sui.rpc.v2.Effects.EventDigestEntry value) {
+        if (eventDigestValueBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEventDigestValueIsMutable();
+          eventDigestValue_.set(index, value);
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder setEventDigestValue(
+          int index, sui.rpc.v2.Effects.EventDigestEntry.Builder builderForValue) {
+        if (eventDigestValueBuilder_ == null) {
+          ensureEventDigestValueIsMutable();
+          eventDigestValue_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder addEventDigestValue(sui.rpc.v2.Effects.EventDigestEntry value) {
+        if (eventDigestValueBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEventDigestValueIsMutable();
+          eventDigestValue_.add(value);
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder addEventDigestValue(
+          int index, sui.rpc.v2.Effects.EventDigestEntry value) {
+        if (eventDigestValueBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEventDigestValueIsMutable();
+          eventDigestValue_.add(index, value);
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder addEventDigestValue(
+          sui.rpc.v2.Effects.EventDigestEntry.Builder builderForValue) {
+        if (eventDigestValueBuilder_ == null) {
+          ensureEventDigestValueIsMutable();
+          eventDigestValue_.add(builderForValue.build());
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder addEventDigestValue(
+          int index, sui.rpc.v2.Effects.EventDigestEntry.Builder builderForValue) {
+        if (eventDigestValueBuilder_ == null) {
+          ensureEventDigestValueIsMutable();
+          eventDigestValue_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder addAllEventDigestValue(
+          java.lang.Iterable<? extends sui.rpc.v2.Effects.EventDigestEntry> values) {
+        if (eventDigestValueBuilder_ == null) {
+          ensureEventDigestValueIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, eventDigestValue_);
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder clearEventDigestValue() {
+        if (eventDigestValueBuilder_ == null) {
+          eventDigestValue_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public Builder removeEventDigestValue(int index) {
+        if (eventDigestValueBuilder_ == null) {
+          ensureEventDigestValueIsMutable();
+          eventDigestValue_.remove(index);
+          onChanged();
+        } else {
+          eventDigestValueBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public sui.rpc.v2.Effects.EventDigestEntry.Builder getEventDigestValueBuilder(
+          int index) {
+        return getEventDigestValueFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public sui.rpc.v2.Effects.EventDigestEntryOrBuilder getEventDigestValueOrBuilder(
+          int index) {
+        if (eventDigestValueBuilder_ == null) {
+          return eventDigestValue_.get(index);  } else {
+          return eventDigestValueBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public java.util.List<? extends sui.rpc.v2.Effects.EventDigestEntryOrBuilder> 
+           getEventDigestValueOrBuilderList() {
+        if (eventDigestValueBuilder_ != null) {
+          return eventDigestValueBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(eventDigestValue_);
+        }
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public sui.rpc.v2.Effects.EventDigestEntry.Builder addEventDigestValueBuilder() {
+        return getEventDigestValueFieldBuilder().addBuilder(
+            sui.rpc.v2.Effects.EventDigestEntry.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public sui.rpc.v2.Effects.EventDigestEntry.Builder addEventDigestValueBuilder(
+          int index) {
+        return getEventDigestValueFieldBuilder().addBuilder(
+            index, sui.rpc.v2.Effects.EventDigestEntry.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * Set when the accumulator value is an event digest list (value_kind = EVENT_DIGEST).
+       * Contains a non-empty list of (event_index, digest) pairs representing
+       * authenticated event stream entries within a transaction.
+       * </pre>
+       *
+       * <code>repeated .sui.rpc.v2.EventDigestEntry event_digest_value = 7;</code>
+       */
+      public java.util.List<sui.rpc.v2.Effects.EventDigestEntry.Builder> 
+           getEventDigestValueBuilderList() {
+        return getEventDigestValueFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          sui.rpc.v2.Effects.EventDigestEntry, sui.rpc.v2.Effects.EventDigestEntry.Builder, sui.rpc.v2.Effects.EventDigestEntryOrBuilder> 
+          getEventDigestValueFieldBuilder() {
+        if (eventDigestValueBuilder_ == null) {
+          eventDigestValueBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              sui.rpc.v2.Effects.EventDigestEntry, sui.rpc.v2.Effects.EventDigestEntry.Builder, sui.rpc.v2.Effects.EventDigestEntryOrBuilder>(
+                  eventDigestValue_,
+                  ((bitField0_ & 0x00000040) != 0),
+                  getParentForChildren(),
+                  isClean());
+          eventDigestValue_ = null;
+        }
+        return eventDigestValueBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -10381,6 +12241,11 @@ public final class Effects {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_sui_rpc_v2_ChangedObject_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_sui_rpc_v2_EventDigestEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_sui_rpc_v2_EventDigestEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_sui_rpc_v2_AccumulatorWrite_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -10452,27 +12317,36 @@ public final class Effects {
       "\014_input_ownerB\017\n\r_output_stateB\021\n\017_outpu" +
       "t_versionB\020\n\016_output_digestB\017\n\r_output_o" +
       "wnerB\024\n\022_accumulator_writeB\017\n\r_id_operat" +
-      "ionB\016\n\014_object_type\"\266\002\n\020AccumulatorWrite" +
-      "\022\024\n\007address\030\001 \001(\tH\000\210\001\001\022\035\n\020accumulator_ty" +
-      "pe\030\002 \001(\tH\001\210\001\001\022I\n\toperation\030\003 \001(\01621.sui.r" +
-      "pc.v2.AccumulatorWrite.AccumulatorOperat" +
-      "ionH\002\210\001\001\022\022\n\005value\030\005 \001(\004H\003\210\001\001\"O\n\024Accumula" +
-      "torOperation\022!\n\035ACCUMULATOR_OPERATION_UN" +
-      "KNOWN\020\000\022\t\n\005MERGE\020\001\022\t\n\005SPLIT\020\002B\n\n\010_addres" +
-      "sB\023\n\021_accumulator_typeB\014\n\n_operationB\010\n\006" +
-      "_valueJ\004\010\004\020\005\"\325\003\n\030UnchangedConsensusObjec" +
-      "t\022T\n\004kind\030\001 \001(\0162A.sui.rpc.v2.UnchangedCo" +
-      "nsensusObject.UnchangedConsensusObjectKi" +
-      "ndH\000\210\001\001\022\026\n\tobject_id\030\002 \001(\tH\001\210\001\001\022\024\n\007versi" +
-      "on\030\003 \001(\004H\002\210\001\001\022\023\n\006digest\030\004 \001(\tH\003\210\001\001\022\030\n\013ob" +
-      "ject_type\030\005 \001(\tH\004\210\001\001\"\307\001\n\034UnchangedConsen" +
-      "susObjectKind\022+\n\'UNCHANGED_CONSENSUS_OBJ" +
-      "ECT_KIND_UNKNOWN\020\000\022\022\n\016READ_ONLY_ROOT\020\001\022!" +
-      "\n\035MUTATE_CONSENSUS_STREAM_ENDED\020\002\022\037\n\033REA" +
-      "D_CONSENSUS_STREAM_ENDED\020\003\022\014\n\010CANCELED\020\004" +
-      "\022\024\n\020PER_EPOCH_CONFIG\020\005B\007\n\005_kindB\014\n\n_obje" +
-      "ct_idB\n\n\010_versionB\t\n\007_digestB\016\n\014_object_" +
-      "typeb\006proto3"
+      "ionB\016\n\014_object_type\"\\\n\020EventDigestEntry\022" +
+      "\030\n\013event_index\030\001 \001(\004H\000\210\001\001\022\023\n\006digest\030\002 \001(" +
+      "\tH\001\210\001\001B\016\n\014_event_indexB\t\n\007_digest\"\315\004\n\020Ac" +
+      "cumulatorWrite\022\024\n\007address\030\001 \001(\tH\000\210\001\001\022\035\n\020" +
+      "accumulator_type\030\002 \001(\tH\001\210\001\001\022I\n\toperation" +
+      "\030\003 \001(\01621.sui.rpc.v2.AccumulatorWrite.Acc" +
+      "umulatorOperationH\002\210\001\001\022F\n\nvalue_kind\030\004 \001" +
+      "(\0162-.sui.rpc.v2.AccumulatorWrite.Accumul" +
+      "atorValueH\003\210\001\001\022\032\n\rinteger_value\030\005 \001(\004H\004\210" +
+      "\001\001\022\025\n\rinteger_tuple\030\006 \003(\004\0228\n\022event_diges" +
+      "t_value\030\007 \003(\0132\034.sui.rpc.v2.EventDigestEn" +
+      "try\"O\n\024AccumulatorOperation\022!\n\035ACCUMULAT" +
+      "OR_OPERATION_UNKNOWN\020\000\022\t\n\005MERGE\020\001\022\t\n\005SPL" +
+      "IT\020\002\"c\n\020AccumulatorValue\022\035\n\031ACCUMULATOR_" +
+      "VALUE_UNKNOWN\020\000\022\013\n\007INTEGER\020\001\022\021\n\rINTEGER_" +
+      "TUPLE\020\002\022\020\n\014EVENT_DIGEST\020\003B\n\n\010_addressB\023\n" +
+      "\021_accumulator_typeB\014\n\n_operationB\r\n\013_val" +
+      "ue_kindB\020\n\016_integer_value\"\325\003\n\030UnchangedC" +
+      "onsensusObject\022T\n\004kind\030\001 \001(\0162A.sui.rpc.v" +
+      "2.UnchangedConsensusObject.UnchangedCons" +
+      "ensusObjectKindH\000\210\001\001\022\026\n\tobject_id\030\002 \001(\tH" +
+      "\001\210\001\001\022\024\n\007version\030\003 \001(\004H\002\210\001\001\022\023\n\006digest\030\004 \001" +
+      "(\tH\003\210\001\001\022\030\n\013object_type\030\005 \001(\tH\004\210\001\001\"\307\001\n\034Un" +
+      "changedConsensusObjectKind\022+\n\'UNCHANGED_" +
+      "CONSENSUS_OBJECT_KIND_UNKNOWN\020\000\022\022\n\016READ_" +
+      "ONLY_ROOT\020\001\022!\n\035MUTATE_CONSENSUS_STREAM_E" +
+      "NDED\020\002\022\037\n\033READ_CONSENSUS_STREAM_ENDED\020\003\022" +
+      "\014\n\010CANCELED\020\004\022\024\n\020PER_EPOCH_CONFIG\020\005B\007\n\005_" +
+      "kindB\014\n\n_object_idB\n\n\010_versionB\t\n\007_diges" +
+      "tB\016\n\014_object_typeb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -10495,14 +12369,20 @@ public final class Effects {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_sui_rpc_v2_ChangedObject_descriptor,
         new java.lang.String[] { "ObjectId", "InputState", "InputVersion", "InputDigest", "InputOwner", "OutputState", "OutputVersion", "OutputDigest", "OutputOwner", "AccumulatorWrite", "IdOperation", "ObjectType", });
-    internal_static_sui_rpc_v2_AccumulatorWrite_descriptor =
+    internal_static_sui_rpc_v2_EventDigestEntry_descriptor =
       getDescriptor().getMessageTypes().get(2);
+    internal_static_sui_rpc_v2_EventDigestEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_sui_rpc_v2_EventDigestEntry_descriptor,
+        new java.lang.String[] { "EventIndex", "Digest", });
+    internal_static_sui_rpc_v2_AccumulatorWrite_descriptor =
+      getDescriptor().getMessageTypes().get(3);
     internal_static_sui_rpc_v2_AccumulatorWrite_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_sui_rpc_v2_AccumulatorWrite_descriptor,
-        new java.lang.String[] { "Address", "AccumulatorType", "Operation", "Value", });
+        new java.lang.String[] { "Address", "AccumulatorType", "Operation", "ValueKind", "IntegerValue", "IntegerTuple", "EventDigestValue", });
     internal_static_sui_rpc_v2_UnchangedConsensusObject_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_sui_rpc_v2_UnchangedConsensusObject_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_sui_rpc_v2_UnchangedConsensusObject_descriptor,

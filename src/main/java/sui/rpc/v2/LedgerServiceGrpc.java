@@ -12,32 +12,32 @@ public final class LedgerServiceGrpc {
 
   private LedgerServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "sui.rpc.v2.LedgerService";
+  public static final java.lang.String SERVICE_NAME = "sui.rpc.v2.LedgerService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetServiceInfoRequest,
-      LedgerServiceOuterClass.GetServiceInfoResponse> getGetServiceInfoMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse> getGetServiceInfoMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetServiceInfo",
-      requestType = LedgerServiceOuterClass.GetServiceInfoRequest.class,
-      responseType = LedgerServiceOuterClass.GetServiceInfoResponse.class,
+      requestType = sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest.class,
+      responseType = sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetServiceInfoRequest,
-      LedgerServiceOuterClass.GetServiceInfoResponse> getGetServiceInfoMethod() {
-    io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetServiceInfoRequest, LedgerServiceOuterClass.GetServiceInfoResponse> getGetServiceInfoMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse> getGetServiceInfoMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest, sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse> getGetServiceInfoMethod;
     if ((getGetServiceInfoMethod = LedgerServiceGrpc.getGetServiceInfoMethod) == null) {
       synchronized (LedgerServiceGrpc.class) {
         if ((getGetServiceInfoMethod = LedgerServiceGrpc.getGetServiceInfoMethod) == null) {
           LedgerServiceGrpc.getGetServiceInfoMethod = getGetServiceInfoMethod =
-              io.grpc.MethodDescriptor.<LedgerServiceOuterClass.GetServiceInfoRequest, LedgerServiceOuterClass.GetServiceInfoResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest, sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetServiceInfo"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetServiceInfoRequest.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetServiceInfoResponse.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse.getDefaultInstance()))
               .setSchemaDescriptor(new LedgerServiceMethodDescriptorSupplier("GetServiceInfo"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class LedgerServiceGrpc {
     return getGetServiceInfoMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetObjectRequest,
-      LedgerServiceOuterClass.GetObjectResponse> getGetObjectMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse> getGetObjectMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetObject",
-      requestType = LedgerServiceOuterClass.GetObjectRequest.class,
-      responseType = LedgerServiceOuterClass.GetObjectResponse.class,
+      requestType = sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest.class,
+      responseType = sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetObjectRequest,
-      LedgerServiceOuterClass.GetObjectResponse> getGetObjectMethod() {
-    io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetObjectRequest, LedgerServiceOuterClass.GetObjectResponse> getGetObjectMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse> getGetObjectMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest, sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse> getGetObjectMethod;
     if ((getGetObjectMethod = LedgerServiceGrpc.getGetObjectMethod) == null) {
       synchronized (LedgerServiceGrpc.class) {
         if ((getGetObjectMethod = LedgerServiceGrpc.getGetObjectMethod) == null) {
           LedgerServiceGrpc.getGetObjectMethod = getGetObjectMethod =
-              io.grpc.MethodDescriptor.<LedgerServiceOuterClass.GetObjectRequest, LedgerServiceOuterClass.GetObjectResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest, sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetObject"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetObjectRequest.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetObjectResponse.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse.getDefaultInstance()))
               .setSchemaDescriptor(new LedgerServiceMethodDescriptorSupplier("GetObject"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class LedgerServiceGrpc {
     return getGetObjectMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<LedgerServiceOuterClass.BatchGetObjectsRequest,
-      LedgerServiceOuterClass.BatchGetObjectsResponse> getBatchGetObjectsMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse> getBatchGetObjectsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "BatchGetObjects",
-      requestType = LedgerServiceOuterClass.BatchGetObjectsRequest.class,
-      responseType = LedgerServiceOuterClass.BatchGetObjectsResponse.class,
+      requestType = sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest.class,
+      responseType = sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<LedgerServiceOuterClass.BatchGetObjectsRequest,
-      LedgerServiceOuterClass.BatchGetObjectsResponse> getBatchGetObjectsMethod() {
-    io.grpc.MethodDescriptor<LedgerServiceOuterClass.BatchGetObjectsRequest, LedgerServiceOuterClass.BatchGetObjectsResponse> getBatchGetObjectsMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse> getBatchGetObjectsMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest, sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse> getBatchGetObjectsMethod;
     if ((getBatchGetObjectsMethod = LedgerServiceGrpc.getBatchGetObjectsMethod) == null) {
       synchronized (LedgerServiceGrpc.class) {
         if ((getBatchGetObjectsMethod = LedgerServiceGrpc.getBatchGetObjectsMethod) == null) {
           LedgerServiceGrpc.getBatchGetObjectsMethod = getBatchGetObjectsMethod =
-              io.grpc.MethodDescriptor.<LedgerServiceOuterClass.BatchGetObjectsRequest, LedgerServiceOuterClass.BatchGetObjectsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest, sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "BatchGetObjects"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.BatchGetObjectsRequest.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.BatchGetObjectsResponse.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new LedgerServiceMethodDescriptorSupplier("BatchGetObjects"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class LedgerServiceGrpc {
     return getBatchGetObjectsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetTransactionRequest,
-      LedgerServiceOuterClass.GetTransactionResponse> getGetTransactionMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse> getGetTransactionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetTransaction",
-      requestType = LedgerServiceOuterClass.GetTransactionRequest.class,
-      responseType = LedgerServiceOuterClass.GetTransactionResponse.class,
+      requestType = sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest.class,
+      responseType = sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetTransactionRequest,
-      LedgerServiceOuterClass.GetTransactionResponse> getGetTransactionMethod() {
-    io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetTransactionRequest, LedgerServiceOuterClass.GetTransactionResponse> getGetTransactionMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse> getGetTransactionMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest, sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse> getGetTransactionMethod;
     if ((getGetTransactionMethod = LedgerServiceGrpc.getGetTransactionMethod) == null) {
       synchronized (LedgerServiceGrpc.class) {
         if ((getGetTransactionMethod = LedgerServiceGrpc.getGetTransactionMethod) == null) {
           LedgerServiceGrpc.getGetTransactionMethod = getGetTransactionMethod =
-              io.grpc.MethodDescriptor.<LedgerServiceOuterClass.GetTransactionRequest, LedgerServiceOuterClass.GetTransactionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest, sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetTransaction"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetTransactionRequest.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetTransactionResponse.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new LedgerServiceMethodDescriptorSupplier("GetTransaction"))
               .build();
         }
@@ -139,29 +139,29 @@ public final class LedgerServiceGrpc {
     return getGetTransactionMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<LedgerServiceOuterClass.BatchGetTransactionsRequest,
-      LedgerServiceOuterClass.BatchGetTransactionsResponse> getBatchGetTransactionsMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse> getBatchGetTransactionsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "BatchGetTransactions",
-      requestType = LedgerServiceOuterClass.BatchGetTransactionsRequest.class,
-      responseType = LedgerServiceOuterClass.BatchGetTransactionsResponse.class,
+      requestType = sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest.class,
+      responseType = sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<LedgerServiceOuterClass.BatchGetTransactionsRequest,
-      LedgerServiceOuterClass.BatchGetTransactionsResponse> getBatchGetTransactionsMethod() {
-    io.grpc.MethodDescriptor<LedgerServiceOuterClass.BatchGetTransactionsRequest, LedgerServiceOuterClass.BatchGetTransactionsResponse> getBatchGetTransactionsMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse> getBatchGetTransactionsMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest, sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse> getBatchGetTransactionsMethod;
     if ((getBatchGetTransactionsMethod = LedgerServiceGrpc.getBatchGetTransactionsMethod) == null) {
       synchronized (LedgerServiceGrpc.class) {
         if ((getBatchGetTransactionsMethod = LedgerServiceGrpc.getBatchGetTransactionsMethod) == null) {
           LedgerServiceGrpc.getBatchGetTransactionsMethod = getBatchGetTransactionsMethod =
-              io.grpc.MethodDescriptor.<LedgerServiceOuterClass.BatchGetTransactionsRequest, LedgerServiceOuterClass.BatchGetTransactionsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest, sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "BatchGetTransactions"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.BatchGetTransactionsRequest.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.BatchGetTransactionsResponse.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new LedgerServiceMethodDescriptorSupplier("BatchGetTransactions"))
               .build();
         }
@@ -170,29 +170,29 @@ public final class LedgerServiceGrpc {
     return getBatchGetTransactionsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetCheckpointRequest,
-      LedgerServiceOuterClass.GetCheckpointResponse> getGetCheckpointMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse> getGetCheckpointMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetCheckpoint",
-      requestType = LedgerServiceOuterClass.GetCheckpointRequest.class,
-      responseType = LedgerServiceOuterClass.GetCheckpointResponse.class,
+      requestType = sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest.class,
+      responseType = sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetCheckpointRequest,
-      LedgerServiceOuterClass.GetCheckpointResponse> getGetCheckpointMethod() {
-    io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetCheckpointRequest, LedgerServiceOuterClass.GetCheckpointResponse> getGetCheckpointMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse> getGetCheckpointMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest, sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse> getGetCheckpointMethod;
     if ((getGetCheckpointMethod = LedgerServiceGrpc.getGetCheckpointMethod) == null) {
       synchronized (LedgerServiceGrpc.class) {
         if ((getGetCheckpointMethod = LedgerServiceGrpc.getGetCheckpointMethod) == null) {
           LedgerServiceGrpc.getGetCheckpointMethod = getGetCheckpointMethod =
-              io.grpc.MethodDescriptor.<LedgerServiceOuterClass.GetCheckpointRequest, LedgerServiceOuterClass.GetCheckpointResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest, sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetCheckpoint"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetCheckpointRequest.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetCheckpointResponse.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse.getDefaultInstance()))
               .setSchemaDescriptor(new LedgerServiceMethodDescriptorSupplier("GetCheckpoint"))
               .build();
         }
@@ -201,29 +201,29 @@ public final class LedgerServiceGrpc {
     return getGetCheckpointMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetEpochRequest,
-      LedgerServiceOuterClass.GetEpochResponse> getGetEpochMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse> getGetEpochMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetEpoch",
-      requestType = LedgerServiceOuterClass.GetEpochRequest.class,
-      responseType = LedgerServiceOuterClass.GetEpochResponse.class,
+      requestType = sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest.class,
+      responseType = sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetEpochRequest,
-      LedgerServiceOuterClass.GetEpochResponse> getGetEpochMethod() {
-    io.grpc.MethodDescriptor<LedgerServiceOuterClass.GetEpochRequest, LedgerServiceOuterClass.GetEpochResponse> getGetEpochMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest,
+      sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse> getGetEpochMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest, sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse> getGetEpochMethod;
     if ((getGetEpochMethod = LedgerServiceGrpc.getGetEpochMethod) == null) {
       synchronized (LedgerServiceGrpc.class) {
         if ((getGetEpochMethod = LedgerServiceGrpc.getGetEpochMethod) == null) {
           LedgerServiceGrpc.getGetEpochMethod = getGetEpochMethod =
-              io.grpc.MethodDescriptor.<LedgerServiceOuterClass.GetEpochRequest, LedgerServiceOuterClass.GetEpochResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest, sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetEpoch"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetEpochRequest.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  LedgerServiceOuterClass.GetEpochResponse.getDefaultInstance()))
+                  sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse.getDefaultInstance()))
               .setSchemaDescriptor(new LedgerServiceMethodDescriptorSupplier("GetEpoch"))
               .build();
         }
@@ -238,7 +238,7 @@ public final class LedgerServiceGrpc {
   public static LedgerServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<LedgerServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<LedgerServiceStub>() {
-        @Override
+        @java.lang.Override
         public LedgerServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new LedgerServiceStub(channel, callOptions);
         }
@@ -253,7 +253,7 @@ public final class LedgerServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<LedgerServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<LedgerServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public LedgerServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new LedgerServiceBlockingStub(channel, callOptions);
         }
@@ -268,7 +268,7 @@ public final class LedgerServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<LedgerServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<LedgerServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public LedgerServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new LedgerServiceFutureStub(channel, callOptions);
         }
@@ -285,50 +285,50 @@ public final class LedgerServiceGrpc {
      * Query the service for general information about its current state.
      * </pre>
      */
-    default void getServiceInfo(LedgerServiceOuterClass.GetServiceInfoRequest request,
-                                io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetServiceInfoResponse> responseObserver) {
+    default void getServiceInfo(sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetServiceInfoMethod(), responseObserver);
     }
 
     /**
      */
-    default void getObject(LedgerServiceOuterClass.GetObjectRequest request,
-                           io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetObjectResponse> responseObserver) {
+    default void getObject(sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetObjectMethod(), responseObserver);
     }
 
     /**
      */
-    default void batchGetObjects(LedgerServiceOuterClass.BatchGetObjectsRequest request,
-                                 io.grpc.stub.StreamObserver<LedgerServiceOuterClass.BatchGetObjectsResponse> responseObserver) {
+    default void batchGetObjects(sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getBatchGetObjectsMethod(), responseObserver);
     }
 
     /**
      */
-    default void getTransaction(LedgerServiceOuterClass.GetTransactionRequest request,
-                                io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetTransactionResponse> responseObserver) {
+    default void getTransaction(sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionMethod(), responseObserver);
     }
 
     /**
      */
-    default void batchGetTransactions(LedgerServiceOuterClass.BatchGetTransactionsRequest request,
-                                      io.grpc.stub.StreamObserver<LedgerServiceOuterClass.BatchGetTransactionsResponse> responseObserver) {
+    default void batchGetTransactions(sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getBatchGetTransactionsMethod(), responseObserver);
     }
 
     /**
      */
-    default void getCheckpoint(LedgerServiceOuterClass.GetCheckpointRequest request,
-                               io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetCheckpointResponse> responseObserver) {
+    default void getCheckpoint(sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetCheckpointMethod(), responseObserver);
     }
 
     /**
      */
-    default void getEpoch(LedgerServiceOuterClass.GetEpochRequest request,
-                          io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetEpochResponse> responseObserver) {
+    default void getEpoch(sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetEpochMethod(), responseObserver);
     }
   }
@@ -339,7 +339,7 @@ public final class LedgerServiceGrpc {
   public static abstract class LedgerServiceImplBase
       implements io.grpc.BindableService, AsyncService {
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return LedgerServiceGrpc.bindService(this);
     }
   }
@@ -354,7 +354,7 @@ public final class LedgerServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected LedgerServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new LedgerServiceStub(channel, callOptions);
@@ -365,56 +365,56 @@ public final class LedgerServiceGrpc {
      * Query the service for general information about its current state.
      * </pre>
      */
-    public void getServiceInfo(LedgerServiceOuterClass.GetServiceInfoRequest request,
-                               io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetServiceInfoResponse> responseObserver) {
+    public void getServiceInfo(sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetServiceInfoMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getObject(LedgerServiceOuterClass.GetObjectRequest request,
-                          io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetObjectResponse> responseObserver) {
+    public void getObject(sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetObjectMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void batchGetObjects(LedgerServiceOuterClass.BatchGetObjectsRequest request,
-                                io.grpc.stub.StreamObserver<LedgerServiceOuterClass.BatchGetObjectsResponse> responseObserver) {
+    public void batchGetObjects(sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getBatchGetObjectsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getTransaction(LedgerServiceOuterClass.GetTransactionRequest request,
-                               io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetTransactionResponse> responseObserver) {
+    public void getTransaction(sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void batchGetTransactions(LedgerServiceOuterClass.BatchGetTransactionsRequest request,
-                                     io.grpc.stub.StreamObserver<LedgerServiceOuterClass.BatchGetTransactionsResponse> responseObserver) {
+    public void batchGetTransactions(sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getBatchGetTransactionsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getCheckpoint(LedgerServiceOuterClass.GetCheckpointRequest request,
-                              io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetCheckpointResponse> responseObserver) {
+    public void getCheckpoint(sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetCheckpointMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getEpoch(LedgerServiceOuterClass.GetEpochRequest request,
-                         io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetEpochResponse> responseObserver) {
+    public void getEpoch(sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetEpochMethod(), getCallOptions()), request, responseObserver);
     }
@@ -430,7 +430,7 @@ public final class LedgerServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected LedgerServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new LedgerServiceBlockingStub(channel, callOptions);
@@ -441,49 +441,49 @@ public final class LedgerServiceGrpc {
      * Query the service for general information about its current state.
      * </pre>
      */
-    public LedgerServiceOuterClass.GetServiceInfoResponse getServiceInfo(LedgerServiceOuterClass.GetServiceInfoRequest request) {
+    public sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse getServiceInfo(sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetServiceInfoMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public LedgerServiceOuterClass.GetObjectResponse getObject(LedgerServiceOuterClass.GetObjectRequest request) {
+    public sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse getObject(sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetObjectMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public LedgerServiceOuterClass.BatchGetObjectsResponse batchGetObjects(LedgerServiceOuterClass.BatchGetObjectsRequest request) {
+    public sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse batchGetObjects(sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getBatchGetObjectsMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public LedgerServiceOuterClass.GetTransactionResponse getTransaction(LedgerServiceOuterClass.GetTransactionRequest request) {
+    public sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse getTransaction(sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public LedgerServiceOuterClass.BatchGetTransactionsResponse batchGetTransactions(LedgerServiceOuterClass.BatchGetTransactionsRequest request) {
+    public sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse batchGetTransactions(sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getBatchGetTransactionsMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public LedgerServiceOuterClass.GetCheckpointResponse getCheckpoint(LedgerServiceOuterClass.GetCheckpointRequest request) {
+    public sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse getCheckpoint(sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetCheckpointMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public LedgerServiceOuterClass.GetEpochResponse getEpoch(LedgerServiceOuterClass.GetEpochRequest request) {
+    public sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse getEpoch(sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetEpochMethod(), getCallOptions(), request);
     }
@@ -499,7 +499,7 @@ public final class LedgerServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected LedgerServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new LedgerServiceFutureStub(channel, callOptions);
@@ -510,56 +510,56 @@ public final class LedgerServiceGrpc {
      * Query the service for general information about its current state.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<LedgerServiceOuterClass.GetServiceInfoResponse> getServiceInfo(
-        LedgerServiceOuterClass.GetServiceInfoRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse> getServiceInfo(
+        sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetServiceInfoMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<LedgerServiceOuterClass.GetObjectResponse> getObject(
-        LedgerServiceOuterClass.GetObjectRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse> getObject(
+        sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetObjectMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<LedgerServiceOuterClass.BatchGetObjectsResponse> batchGetObjects(
-        LedgerServiceOuterClass.BatchGetObjectsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse> batchGetObjects(
+        sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getBatchGetObjectsMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<LedgerServiceOuterClass.GetTransactionResponse> getTransaction(
-        LedgerServiceOuterClass.GetTransactionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse> getTransaction(
+        sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<LedgerServiceOuterClass.BatchGetTransactionsResponse> batchGetTransactions(
-        LedgerServiceOuterClass.BatchGetTransactionsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse> batchGetTransactions(
+        sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getBatchGetTransactionsMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<LedgerServiceOuterClass.GetCheckpointResponse> getCheckpoint(
-        LedgerServiceOuterClass.GetCheckpointRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse> getCheckpoint(
+        sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetCheckpointMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<LedgerServiceOuterClass.GetEpochResponse> getEpoch(
-        LedgerServiceOuterClass.GetEpochRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse> getEpoch(
+        sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetEpochMethod(), getCallOptions()), request);
     }
@@ -586,45 +586,45 @@ public final class LedgerServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_SERVICE_INFO:
-          serviceImpl.getServiceInfo((LedgerServiceOuterClass.GetServiceInfoRequest) request,
-              (io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetServiceInfoResponse>) responseObserver);
+          serviceImpl.getServiceInfo((sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse>) responseObserver);
           break;
         case METHODID_GET_OBJECT:
-          serviceImpl.getObject((LedgerServiceOuterClass.GetObjectRequest) request,
-              (io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetObjectResponse>) responseObserver);
+          serviceImpl.getObject((sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse>) responseObserver);
           break;
         case METHODID_BATCH_GET_OBJECTS:
-          serviceImpl.batchGetObjects((LedgerServiceOuterClass.BatchGetObjectsRequest) request,
-              (io.grpc.stub.StreamObserver<LedgerServiceOuterClass.BatchGetObjectsResponse>) responseObserver);
+          serviceImpl.batchGetObjects((sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse>) responseObserver);
           break;
         case METHODID_GET_TRANSACTION:
-          serviceImpl.getTransaction((LedgerServiceOuterClass.GetTransactionRequest) request,
-              (io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetTransactionResponse>) responseObserver);
+          serviceImpl.getTransaction((sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse>) responseObserver);
           break;
         case METHODID_BATCH_GET_TRANSACTIONS:
-          serviceImpl.batchGetTransactions((LedgerServiceOuterClass.BatchGetTransactionsRequest) request,
-              (io.grpc.stub.StreamObserver<LedgerServiceOuterClass.BatchGetTransactionsResponse>) responseObserver);
+          serviceImpl.batchGetTransactions((sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse>) responseObserver);
           break;
         case METHODID_GET_CHECKPOINT:
-          serviceImpl.getCheckpoint((LedgerServiceOuterClass.GetCheckpointRequest) request,
-              (io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetCheckpointResponse>) responseObserver);
+          serviceImpl.getCheckpoint((sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse>) responseObserver);
           break;
         case METHODID_GET_EPOCH:
-          serviceImpl.getEpoch((LedgerServiceOuterClass.GetEpochRequest) request,
-              (io.grpc.stub.StreamObserver<LedgerServiceOuterClass.GetEpochResponse>) responseObserver);
+          serviceImpl.getEpoch((sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -640,50 +640,50 @@ public final class LedgerServiceGrpc {
           getGetServiceInfoMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              LedgerServiceOuterClass.GetServiceInfoRequest,
-              LedgerServiceOuterClass.GetServiceInfoResponse>(
+              sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoRequest,
+              sui.rpc.v2.LedgerServiceOuterClass.GetServiceInfoResponse>(
                 service, METHODID_GET_SERVICE_INFO)))
         .addMethod(
           getGetObjectMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              LedgerServiceOuterClass.GetObjectRequest,
-              LedgerServiceOuterClass.GetObjectResponse>(
+              sui.rpc.v2.LedgerServiceOuterClass.GetObjectRequest,
+              sui.rpc.v2.LedgerServiceOuterClass.GetObjectResponse>(
                 service, METHODID_GET_OBJECT)))
         .addMethod(
           getBatchGetObjectsMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              LedgerServiceOuterClass.BatchGetObjectsRequest,
-              LedgerServiceOuterClass.BatchGetObjectsResponse>(
+              sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsRequest,
+              sui.rpc.v2.LedgerServiceOuterClass.BatchGetObjectsResponse>(
                 service, METHODID_BATCH_GET_OBJECTS)))
         .addMethod(
           getGetTransactionMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              LedgerServiceOuterClass.GetTransactionRequest,
-              LedgerServiceOuterClass.GetTransactionResponse>(
+              sui.rpc.v2.LedgerServiceOuterClass.GetTransactionRequest,
+              sui.rpc.v2.LedgerServiceOuterClass.GetTransactionResponse>(
                 service, METHODID_GET_TRANSACTION)))
         .addMethod(
           getBatchGetTransactionsMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              LedgerServiceOuterClass.BatchGetTransactionsRequest,
-              LedgerServiceOuterClass.BatchGetTransactionsResponse>(
+              sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsRequest,
+              sui.rpc.v2.LedgerServiceOuterClass.BatchGetTransactionsResponse>(
                 service, METHODID_BATCH_GET_TRANSACTIONS)))
         .addMethod(
           getGetCheckpointMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              LedgerServiceOuterClass.GetCheckpointRequest,
-              LedgerServiceOuterClass.GetCheckpointResponse>(
+              sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointRequest,
+              sui.rpc.v2.LedgerServiceOuterClass.GetCheckpointResponse>(
                 service, METHODID_GET_CHECKPOINT)))
         .addMethod(
           getGetEpochMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              LedgerServiceOuterClass.GetEpochRequest,
-              LedgerServiceOuterClass.GetEpochResponse>(
+              sui.rpc.v2.LedgerServiceOuterClass.GetEpochRequest,
+              sui.rpc.v2.LedgerServiceOuterClass.GetEpochResponse>(
                 service, METHODID_GET_EPOCH)))
         .build();
   }
@@ -692,12 +692,12 @@ public final class LedgerServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     LedgerServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return LedgerServiceOuterClass.getDescriptor();
+      return sui.rpc.v2.LedgerServiceOuterClass.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("LedgerService");
     }
@@ -711,13 +711,13 @@ public final class LedgerServiceGrpc {
   private static final class LedgerServiceMethodDescriptorSupplier
       extends LedgerServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
+    private final java.lang.String methodName;
 
-    LedgerServiceMethodDescriptorSupplier(String methodName) {
+    LedgerServiceMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

@@ -12,32 +12,32 @@ public final class StateServiceGrpc {
 
   private StateServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "sui.rpc.v2.StateService";
+  public static final java.lang.String SERVICE_NAME = "sui.rpc.v2.StateService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<StateServiceOuterClass.ListDynamicFieldsRequest,
-      StateServiceOuterClass.ListDynamicFieldsResponse> getListDynamicFieldsMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest,
+      sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse> getListDynamicFieldsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ListDynamicFields",
-      requestType = StateServiceOuterClass.ListDynamicFieldsRequest.class,
-      responseType = StateServiceOuterClass.ListDynamicFieldsResponse.class,
+      requestType = sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest.class,
+      responseType = sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<StateServiceOuterClass.ListDynamicFieldsRequest,
-      StateServiceOuterClass.ListDynamicFieldsResponse> getListDynamicFieldsMethod() {
-    io.grpc.MethodDescriptor<StateServiceOuterClass.ListDynamicFieldsRequest, StateServiceOuterClass.ListDynamicFieldsResponse> getListDynamicFieldsMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest,
+      sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse> getListDynamicFieldsMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest, sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse> getListDynamicFieldsMethod;
     if ((getListDynamicFieldsMethod = StateServiceGrpc.getListDynamicFieldsMethod) == null) {
       synchronized (StateServiceGrpc.class) {
         if ((getListDynamicFieldsMethod = StateServiceGrpc.getListDynamicFieldsMethod) == null) {
           StateServiceGrpc.getListDynamicFieldsMethod = getListDynamicFieldsMethod =
-              io.grpc.MethodDescriptor.<StateServiceOuterClass.ListDynamicFieldsRequest, StateServiceOuterClass.ListDynamicFieldsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest, sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListDynamicFields"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.ListDynamicFieldsRequest.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.ListDynamicFieldsResponse.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new StateServiceMethodDescriptorSupplier("ListDynamicFields"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class StateServiceGrpc {
     return getListDynamicFieldsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<StateServiceOuterClass.ListOwnedObjectsRequest,
-      StateServiceOuterClass.ListOwnedObjectsResponse> getListOwnedObjectsMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest,
+      sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse> getListOwnedObjectsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ListOwnedObjects",
-      requestType = StateServiceOuterClass.ListOwnedObjectsRequest.class,
-      responseType = StateServiceOuterClass.ListOwnedObjectsResponse.class,
+      requestType = sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest.class,
+      responseType = sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<StateServiceOuterClass.ListOwnedObjectsRequest,
-      StateServiceOuterClass.ListOwnedObjectsResponse> getListOwnedObjectsMethod() {
-    io.grpc.MethodDescriptor<StateServiceOuterClass.ListOwnedObjectsRequest, StateServiceOuterClass.ListOwnedObjectsResponse> getListOwnedObjectsMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest,
+      sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse> getListOwnedObjectsMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest, sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse> getListOwnedObjectsMethod;
     if ((getListOwnedObjectsMethod = StateServiceGrpc.getListOwnedObjectsMethod) == null) {
       synchronized (StateServiceGrpc.class) {
         if ((getListOwnedObjectsMethod = StateServiceGrpc.getListOwnedObjectsMethod) == null) {
           StateServiceGrpc.getListOwnedObjectsMethod = getListOwnedObjectsMethod =
-              io.grpc.MethodDescriptor.<StateServiceOuterClass.ListOwnedObjectsRequest, StateServiceOuterClass.ListOwnedObjectsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest, sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListOwnedObjects"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.ListOwnedObjectsRequest.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.ListOwnedObjectsResponse.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new StateServiceMethodDescriptorSupplier("ListOwnedObjects"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class StateServiceGrpc {
     return getListOwnedObjectsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<StateServiceOuterClass.GetCoinInfoRequest,
-      StateServiceOuterClass.GetCoinInfoResponse> getGetCoinInfoMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest,
+      sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse> getGetCoinInfoMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetCoinInfo",
-      requestType = StateServiceOuterClass.GetCoinInfoRequest.class,
-      responseType = StateServiceOuterClass.GetCoinInfoResponse.class,
+      requestType = sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest.class,
+      responseType = sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<StateServiceOuterClass.GetCoinInfoRequest,
-      StateServiceOuterClass.GetCoinInfoResponse> getGetCoinInfoMethod() {
-    io.grpc.MethodDescriptor<StateServiceOuterClass.GetCoinInfoRequest, StateServiceOuterClass.GetCoinInfoResponse> getGetCoinInfoMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest,
+      sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse> getGetCoinInfoMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest, sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse> getGetCoinInfoMethod;
     if ((getGetCoinInfoMethod = StateServiceGrpc.getGetCoinInfoMethod) == null) {
       synchronized (StateServiceGrpc.class) {
         if ((getGetCoinInfoMethod = StateServiceGrpc.getGetCoinInfoMethod) == null) {
           StateServiceGrpc.getGetCoinInfoMethod = getGetCoinInfoMethod =
-              io.grpc.MethodDescriptor.<StateServiceOuterClass.GetCoinInfoRequest, StateServiceOuterClass.GetCoinInfoResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest, sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetCoinInfo"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.GetCoinInfoRequest.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.GetCoinInfoResponse.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse.getDefaultInstance()))
               .setSchemaDescriptor(new StateServiceMethodDescriptorSupplier("GetCoinInfo"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class StateServiceGrpc {
     return getGetCoinInfoMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<StateServiceOuterClass.GetBalanceRequest,
-      StateServiceOuterClass.GetBalanceResponse> getGetBalanceMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest,
+      sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse> getGetBalanceMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetBalance",
-      requestType = StateServiceOuterClass.GetBalanceRequest.class,
-      responseType = StateServiceOuterClass.GetBalanceResponse.class,
+      requestType = sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest.class,
+      responseType = sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<StateServiceOuterClass.GetBalanceRequest,
-      StateServiceOuterClass.GetBalanceResponse> getGetBalanceMethod() {
-    io.grpc.MethodDescriptor<StateServiceOuterClass.GetBalanceRequest, StateServiceOuterClass.GetBalanceResponse> getGetBalanceMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest,
+      sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse> getGetBalanceMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest, sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse> getGetBalanceMethod;
     if ((getGetBalanceMethod = StateServiceGrpc.getGetBalanceMethod) == null) {
       synchronized (StateServiceGrpc.class) {
         if ((getGetBalanceMethod = StateServiceGrpc.getGetBalanceMethod) == null) {
           StateServiceGrpc.getGetBalanceMethod = getGetBalanceMethod =
-              io.grpc.MethodDescriptor.<StateServiceOuterClass.GetBalanceRequest, StateServiceOuterClass.GetBalanceResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest, sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetBalance"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.GetBalanceRequest.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.GetBalanceResponse.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse.getDefaultInstance()))
               .setSchemaDescriptor(new StateServiceMethodDescriptorSupplier("GetBalance"))
               .build();
         }
@@ -139,29 +139,29 @@ public final class StateServiceGrpc {
     return getGetBalanceMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<StateServiceOuterClass.ListBalancesRequest,
-      StateServiceOuterClass.ListBalancesResponse> getListBalancesMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest,
+      sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse> getListBalancesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ListBalances",
-      requestType = StateServiceOuterClass.ListBalancesRequest.class,
-      responseType = StateServiceOuterClass.ListBalancesResponse.class,
+      requestType = sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest.class,
+      responseType = sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<StateServiceOuterClass.ListBalancesRequest,
-      StateServiceOuterClass.ListBalancesResponse> getListBalancesMethod() {
-    io.grpc.MethodDescriptor<StateServiceOuterClass.ListBalancesRequest, StateServiceOuterClass.ListBalancesResponse> getListBalancesMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest,
+      sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse> getListBalancesMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest, sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse> getListBalancesMethod;
     if ((getListBalancesMethod = StateServiceGrpc.getListBalancesMethod) == null) {
       synchronized (StateServiceGrpc.class) {
         if ((getListBalancesMethod = StateServiceGrpc.getListBalancesMethod) == null) {
           StateServiceGrpc.getListBalancesMethod = getListBalancesMethod =
-              io.grpc.MethodDescriptor.<StateServiceOuterClass.ListBalancesRequest, StateServiceOuterClass.ListBalancesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest, sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListBalances"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.ListBalancesRequest.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  StateServiceOuterClass.ListBalancesResponse.getDefaultInstance()))
+                  sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new StateServiceMethodDescriptorSupplier("ListBalances"))
               .build();
         }
@@ -176,7 +176,7 @@ public final class StateServiceGrpc {
   public static StateServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<StateServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<StateServiceStub>() {
-        @Override
+        @java.lang.Override
         public StateServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new StateServiceStub(channel, callOptions);
         }
@@ -191,7 +191,7 @@ public final class StateServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<StateServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<StateServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public StateServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new StateServiceBlockingStub(channel, callOptions);
         }
@@ -206,7 +206,7 @@ public final class StateServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<StateServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<StateServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public StateServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new StateServiceFutureStub(channel, callOptions);
         }
@@ -220,36 +220,36 @@ public final class StateServiceGrpc {
 
     /**
      */
-    default void listDynamicFields(StateServiceOuterClass.ListDynamicFieldsRequest request,
-                                   io.grpc.stub.StreamObserver<StateServiceOuterClass.ListDynamicFieldsResponse> responseObserver) {
+    default void listDynamicFields(sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListDynamicFieldsMethod(), responseObserver);
     }
 
     /**
      */
-    default void listOwnedObjects(StateServiceOuterClass.ListOwnedObjectsRequest request,
-                                  io.grpc.stub.StreamObserver<StateServiceOuterClass.ListOwnedObjectsResponse> responseObserver) {
+    default void listOwnedObjects(sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListOwnedObjectsMethod(), responseObserver);
     }
 
     /**
      */
-    default void getCoinInfo(StateServiceOuterClass.GetCoinInfoRequest request,
-                             io.grpc.stub.StreamObserver<StateServiceOuterClass.GetCoinInfoResponse> responseObserver) {
+    default void getCoinInfo(sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetCoinInfoMethod(), responseObserver);
     }
 
     /**
      */
-    default void getBalance(StateServiceOuterClass.GetBalanceRequest request,
-                            io.grpc.stub.StreamObserver<StateServiceOuterClass.GetBalanceResponse> responseObserver) {
+    default void getBalance(sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBalanceMethod(), responseObserver);
     }
 
     /**
      */
-    default void listBalances(StateServiceOuterClass.ListBalancesRequest request,
-                              io.grpc.stub.StreamObserver<StateServiceOuterClass.ListBalancesResponse> responseObserver) {
+    default void listBalances(sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListBalancesMethod(), responseObserver);
     }
   }
@@ -260,7 +260,7 @@ public final class StateServiceGrpc {
   public static abstract class StateServiceImplBase
       implements io.grpc.BindableService, AsyncService {
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return StateServiceGrpc.bindService(this);
     }
   }
@@ -275,7 +275,7 @@ public final class StateServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected StateServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new StateServiceStub(channel, callOptions);
@@ -283,40 +283,40 @@ public final class StateServiceGrpc {
 
     /**
      */
-    public void listDynamicFields(StateServiceOuterClass.ListDynamicFieldsRequest request,
-                                  io.grpc.stub.StreamObserver<StateServiceOuterClass.ListDynamicFieldsResponse> responseObserver) {
+    public void listDynamicFields(sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListDynamicFieldsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void listOwnedObjects(StateServiceOuterClass.ListOwnedObjectsRequest request,
-                                 io.grpc.stub.StreamObserver<StateServiceOuterClass.ListOwnedObjectsResponse> responseObserver) {
+    public void listOwnedObjects(sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListOwnedObjectsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getCoinInfo(StateServiceOuterClass.GetCoinInfoRequest request,
-                            io.grpc.stub.StreamObserver<StateServiceOuterClass.GetCoinInfoResponse> responseObserver) {
+    public void getCoinInfo(sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetCoinInfoMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getBalance(StateServiceOuterClass.GetBalanceRequest request,
-                           io.grpc.stub.StreamObserver<StateServiceOuterClass.GetBalanceResponse> responseObserver) {
+    public void getBalance(sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBalanceMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void listBalances(StateServiceOuterClass.ListBalancesRequest request,
-                             io.grpc.stub.StreamObserver<StateServiceOuterClass.ListBalancesResponse> responseObserver) {
+    public void listBalances(sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListBalancesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -332,7 +332,7 @@ public final class StateServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected StateServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new StateServiceBlockingStub(channel, callOptions);
@@ -340,35 +340,35 @@ public final class StateServiceGrpc {
 
     /**
      */
-    public StateServiceOuterClass.ListDynamicFieldsResponse listDynamicFields(StateServiceOuterClass.ListDynamicFieldsRequest request) {
+    public sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse listDynamicFields(sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListDynamicFieldsMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public StateServiceOuterClass.ListOwnedObjectsResponse listOwnedObjects(StateServiceOuterClass.ListOwnedObjectsRequest request) {
+    public sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse listOwnedObjects(sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListOwnedObjectsMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public StateServiceOuterClass.GetCoinInfoResponse getCoinInfo(StateServiceOuterClass.GetCoinInfoRequest request) {
+    public sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse getCoinInfo(sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetCoinInfoMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public StateServiceOuterClass.GetBalanceResponse getBalance(StateServiceOuterClass.GetBalanceRequest request) {
+    public sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse getBalance(sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBalanceMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public StateServiceOuterClass.ListBalancesResponse listBalances(StateServiceOuterClass.ListBalancesRequest request) {
+    public sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse listBalances(sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListBalancesMethod(), getCallOptions(), request);
     }
@@ -384,7 +384,7 @@ public final class StateServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected StateServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new StateServiceFutureStub(channel, callOptions);
@@ -392,40 +392,40 @@ public final class StateServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<StateServiceOuterClass.ListDynamicFieldsResponse> listDynamicFields(
-        StateServiceOuterClass.ListDynamicFieldsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse> listDynamicFields(
+        sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListDynamicFieldsMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<StateServiceOuterClass.ListOwnedObjectsResponse> listOwnedObjects(
-        StateServiceOuterClass.ListOwnedObjectsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse> listOwnedObjects(
+        sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListOwnedObjectsMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<StateServiceOuterClass.GetCoinInfoResponse> getCoinInfo(
-        StateServiceOuterClass.GetCoinInfoRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse> getCoinInfo(
+        sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetCoinInfoMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<StateServiceOuterClass.GetBalanceResponse> getBalance(
-        StateServiceOuterClass.GetBalanceRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse> getBalance(
+        sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBalanceMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<StateServiceOuterClass.ListBalancesResponse> listBalances(
-        StateServiceOuterClass.ListBalancesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse> listBalances(
+        sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListBalancesMethod(), getCallOptions()), request);
     }
@@ -450,37 +450,37 @@ public final class StateServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_LIST_DYNAMIC_FIELDS:
-          serviceImpl.listDynamicFields((StateServiceOuterClass.ListDynamicFieldsRequest) request,
-              (io.grpc.stub.StreamObserver<StateServiceOuterClass.ListDynamicFieldsResponse>) responseObserver);
+          serviceImpl.listDynamicFields((sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse>) responseObserver);
           break;
         case METHODID_LIST_OWNED_OBJECTS:
-          serviceImpl.listOwnedObjects((StateServiceOuterClass.ListOwnedObjectsRequest) request,
-              (io.grpc.stub.StreamObserver<StateServiceOuterClass.ListOwnedObjectsResponse>) responseObserver);
+          serviceImpl.listOwnedObjects((sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse>) responseObserver);
           break;
         case METHODID_GET_COIN_INFO:
-          serviceImpl.getCoinInfo((StateServiceOuterClass.GetCoinInfoRequest) request,
-              (io.grpc.stub.StreamObserver<StateServiceOuterClass.GetCoinInfoResponse>) responseObserver);
+          serviceImpl.getCoinInfo((sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse>) responseObserver);
           break;
         case METHODID_GET_BALANCE:
-          serviceImpl.getBalance((StateServiceOuterClass.GetBalanceRequest) request,
-              (io.grpc.stub.StreamObserver<StateServiceOuterClass.GetBalanceResponse>) responseObserver);
+          serviceImpl.getBalance((sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse>) responseObserver);
           break;
         case METHODID_LIST_BALANCES:
-          serviceImpl.listBalances((StateServiceOuterClass.ListBalancesRequest) request,
-              (io.grpc.stub.StreamObserver<StateServiceOuterClass.ListBalancesResponse>) responseObserver);
+          serviceImpl.listBalances((sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -496,36 +496,36 @@ public final class StateServiceGrpc {
           getListDynamicFieldsMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              StateServiceOuterClass.ListDynamicFieldsRequest,
-              StateServiceOuterClass.ListDynamicFieldsResponse>(
+              sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsRequest,
+              sui.rpc.v2.StateServiceOuterClass.ListDynamicFieldsResponse>(
                 service, METHODID_LIST_DYNAMIC_FIELDS)))
         .addMethod(
           getListOwnedObjectsMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              StateServiceOuterClass.ListOwnedObjectsRequest,
-              StateServiceOuterClass.ListOwnedObjectsResponse>(
+              sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsRequest,
+              sui.rpc.v2.StateServiceOuterClass.ListOwnedObjectsResponse>(
                 service, METHODID_LIST_OWNED_OBJECTS)))
         .addMethod(
           getGetCoinInfoMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              StateServiceOuterClass.GetCoinInfoRequest,
-              StateServiceOuterClass.GetCoinInfoResponse>(
+              sui.rpc.v2.StateServiceOuterClass.GetCoinInfoRequest,
+              sui.rpc.v2.StateServiceOuterClass.GetCoinInfoResponse>(
                 service, METHODID_GET_COIN_INFO)))
         .addMethod(
           getGetBalanceMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              StateServiceOuterClass.GetBalanceRequest,
-              StateServiceOuterClass.GetBalanceResponse>(
+              sui.rpc.v2.StateServiceOuterClass.GetBalanceRequest,
+              sui.rpc.v2.StateServiceOuterClass.GetBalanceResponse>(
                 service, METHODID_GET_BALANCE)))
         .addMethod(
           getListBalancesMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              StateServiceOuterClass.ListBalancesRequest,
-              StateServiceOuterClass.ListBalancesResponse>(
+              sui.rpc.v2.StateServiceOuterClass.ListBalancesRequest,
+              sui.rpc.v2.StateServiceOuterClass.ListBalancesResponse>(
                 service, METHODID_LIST_BALANCES)))
         .build();
   }
@@ -534,12 +534,12 @@ public final class StateServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     StateServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return StateServiceOuterClass.getDescriptor();
+      return sui.rpc.v2.StateServiceOuterClass.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("StateService");
     }
@@ -553,13 +553,13 @@ public final class StateServiceGrpc {
   private static final class StateServiceMethodDescriptorSupplier
       extends StateServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
+    private final java.lang.String methodName;
 
-    StateServiceMethodDescriptorSupplier(String methodName) {
+    StateServiceMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

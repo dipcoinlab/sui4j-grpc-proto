@@ -12,32 +12,32 @@ public final class SubscriptionServiceGrpc {
 
   private SubscriptionServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "sui.rpc.v2.SubscriptionService";
+  public static final java.lang.String SERVICE_NAME = "sui.rpc.v2.SubscriptionService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<SubscriptionServiceOuterClass.SubscribeCheckpointsRequest,
-      SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> getSubscribeCheckpointsMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest,
+      sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> getSubscribeCheckpointsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SubscribeCheckpoints",
-      requestType = SubscriptionServiceOuterClass.SubscribeCheckpointsRequest.class,
-      responseType = SubscriptionServiceOuterClass.SubscribeCheckpointsResponse.class,
+      requestType = sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest.class,
+      responseType = sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<SubscriptionServiceOuterClass.SubscribeCheckpointsRequest,
-      SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> getSubscribeCheckpointsMethod() {
-    io.grpc.MethodDescriptor<SubscriptionServiceOuterClass.SubscribeCheckpointsRequest, SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> getSubscribeCheckpointsMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest,
+      sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> getSubscribeCheckpointsMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest, sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> getSubscribeCheckpointsMethod;
     if ((getSubscribeCheckpointsMethod = SubscriptionServiceGrpc.getSubscribeCheckpointsMethod) == null) {
       synchronized (SubscriptionServiceGrpc.class) {
         if ((getSubscribeCheckpointsMethod = SubscriptionServiceGrpc.getSubscribeCheckpointsMethod) == null) {
           SubscriptionServiceGrpc.getSubscribeCheckpointsMethod = getSubscribeCheckpointsMethod =
-              io.grpc.MethodDescriptor.<SubscriptionServiceOuterClass.SubscribeCheckpointsRequest, SubscriptionServiceOuterClass.SubscribeCheckpointsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest, sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SubscribeCheckpoints"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SubscriptionServiceOuterClass.SubscribeCheckpointsRequest.getDefaultInstance()))
+                  sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SubscriptionServiceOuterClass.SubscribeCheckpointsResponse.getDefaultInstance()))
+                  sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new SubscriptionServiceMethodDescriptorSupplier("SubscribeCheckpoints"))
               .build();
         }
@@ -52,7 +52,7 @@ public final class SubscriptionServiceGrpc {
   public static SubscriptionServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SubscriptionServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SubscriptionServiceStub>() {
-        @Override
+        @java.lang.Override
         public SubscriptionServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SubscriptionServiceStub(channel, callOptions);
         }
@@ -67,7 +67,7 @@ public final class SubscriptionServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SubscriptionServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SubscriptionServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public SubscriptionServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SubscriptionServiceBlockingStub(channel, callOptions);
         }
@@ -82,7 +82,7 @@ public final class SubscriptionServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SubscriptionServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SubscriptionServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public SubscriptionServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SubscriptionServiceFutureStub(channel, callOptions);
         }
@@ -108,8 +108,8 @@ public final class SubscriptionServiceGrpc {
      * they missed.
      * </pre>
      */
-    default void subscribeCheckpoints(SubscriptionServiceOuterClass.SubscribeCheckpointsRequest request,
-                                      io.grpc.stub.StreamObserver<SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> responseObserver) {
+    default void subscribeCheckpoints(sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSubscribeCheckpointsMethod(), responseObserver);
     }
   }
@@ -120,7 +120,7 @@ public final class SubscriptionServiceGrpc {
   public static abstract class SubscriptionServiceImplBase
       implements io.grpc.BindableService, AsyncService {
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return SubscriptionServiceGrpc.bindService(this);
     }
   }
@@ -135,7 +135,7 @@ public final class SubscriptionServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected SubscriptionServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SubscriptionServiceStub(channel, callOptions);
@@ -155,8 +155,8 @@ public final class SubscriptionServiceGrpc {
      * they missed.
      * </pre>
      */
-    public void subscribeCheckpoints(SubscriptionServiceOuterClass.SubscribeCheckpointsRequest request,
-                                     io.grpc.stub.StreamObserver<SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> responseObserver) {
+    public void subscribeCheckpoints(sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getSubscribeCheckpointsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -172,7 +172,7 @@ public final class SubscriptionServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected SubscriptionServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SubscriptionServiceBlockingStub(channel, callOptions);
@@ -192,8 +192,8 @@ public final class SubscriptionServiceGrpc {
      * they missed.
      * </pre>
      */
-    public java.util.Iterator<SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> subscribeCheckpoints(
-        SubscriptionServiceOuterClass.SubscribeCheckpointsRequest request) {
+    public java.util.Iterator<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse> subscribeCheckpoints(
+        sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getSubscribeCheckpointsMethod(), getCallOptions(), request);
     }
@@ -209,7 +209,7 @@ public final class SubscriptionServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected SubscriptionServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SubscriptionServiceFutureStub(channel, callOptions);
@@ -231,21 +231,21 @@ public final class SubscriptionServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SUBSCRIBE_CHECKPOINTS:
-          serviceImpl.subscribeCheckpoints((SubscriptionServiceOuterClass.SubscribeCheckpointsRequest) request,
-              (io.grpc.stub.StreamObserver<SubscriptionServiceOuterClass.SubscribeCheckpointsResponse>) responseObserver);
+          serviceImpl.subscribeCheckpoints((sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -261,8 +261,8 @@ public final class SubscriptionServiceGrpc {
           getSubscribeCheckpointsMethod(),
           io.grpc.stub.ServerCalls.asyncServerStreamingCall(
             new MethodHandlers<
-              SubscriptionServiceOuterClass.SubscribeCheckpointsRequest,
-              SubscriptionServiceOuterClass.SubscribeCheckpointsResponse>(
+              sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsRequest,
+              sui.rpc.v2.SubscriptionServiceOuterClass.SubscribeCheckpointsResponse>(
                 service, METHODID_SUBSCRIBE_CHECKPOINTS)))
         .build();
   }
@@ -271,12 +271,12 @@ public final class SubscriptionServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     SubscriptionServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return SubscriptionServiceOuterClass.getDescriptor();
+      return sui.rpc.v2.SubscriptionServiceOuterClass.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("SubscriptionService");
     }
@@ -290,13 +290,13 @@ public final class SubscriptionServiceGrpc {
   private static final class SubscriptionServiceMethodDescriptorSupplier
       extends SubscriptionServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
+    private final java.lang.String methodName;
 
-    SubscriptionServiceMethodDescriptorSupplier(String methodName) {
+    SubscriptionServiceMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

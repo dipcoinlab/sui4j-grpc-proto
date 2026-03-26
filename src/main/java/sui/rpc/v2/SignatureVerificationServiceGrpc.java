@@ -12,32 +12,32 @@ public final class SignatureVerificationServiceGrpc {
 
   private SignatureVerificationServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "sui.rpc.v2.SignatureVerificationService";
+  public static final java.lang.String SERVICE_NAME = "sui.rpc.v2.SignatureVerificationService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<SignatureVerificationServiceOuterClass.VerifySignatureRequest,
-      SignatureVerificationServiceOuterClass.VerifySignatureResponse> getVerifySignatureMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest,
+      sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse> getVerifySignatureMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "VerifySignature",
-      requestType = SignatureVerificationServiceOuterClass.VerifySignatureRequest.class,
-      responseType = SignatureVerificationServiceOuterClass.VerifySignatureResponse.class,
+      requestType = sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest.class,
+      responseType = sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<SignatureVerificationServiceOuterClass.VerifySignatureRequest,
-      SignatureVerificationServiceOuterClass.VerifySignatureResponse> getVerifySignatureMethod() {
-    io.grpc.MethodDescriptor<SignatureVerificationServiceOuterClass.VerifySignatureRequest, SignatureVerificationServiceOuterClass.VerifySignatureResponse> getVerifySignatureMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest,
+      sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse> getVerifySignatureMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest, sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse> getVerifySignatureMethod;
     if ((getVerifySignatureMethod = SignatureVerificationServiceGrpc.getVerifySignatureMethod) == null) {
       synchronized (SignatureVerificationServiceGrpc.class) {
         if ((getVerifySignatureMethod = SignatureVerificationServiceGrpc.getVerifySignatureMethod) == null) {
           SignatureVerificationServiceGrpc.getVerifySignatureMethod = getVerifySignatureMethod =
-              io.grpc.MethodDescriptor.<SignatureVerificationServiceOuterClass.VerifySignatureRequest, SignatureVerificationServiceOuterClass.VerifySignatureResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest, sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "VerifySignature"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SignatureVerificationServiceOuterClass.VerifySignatureRequest.getDefaultInstance()))
+                  sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SignatureVerificationServiceOuterClass.VerifySignatureResponse.getDefaultInstance()))
+                  sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse.getDefaultInstance()))
               .setSchemaDescriptor(new SignatureVerificationServiceMethodDescriptorSupplier("VerifySignature"))
               .build();
         }
@@ -52,7 +52,7 @@ public final class SignatureVerificationServiceGrpc {
   public static SignatureVerificationServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SignatureVerificationServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SignatureVerificationServiceStub>() {
-        @Override
+        @java.lang.Override
         public SignatureVerificationServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SignatureVerificationServiceStub(channel, callOptions);
         }
@@ -67,7 +67,7 @@ public final class SignatureVerificationServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SignatureVerificationServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SignatureVerificationServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public SignatureVerificationServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SignatureVerificationServiceBlockingStub(channel, callOptions);
         }
@@ -82,7 +82,7 @@ public final class SignatureVerificationServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<SignatureVerificationServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<SignatureVerificationServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public SignatureVerificationServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new SignatureVerificationServiceFutureStub(channel, callOptions);
         }
@@ -99,8 +99,8 @@ public final class SignatureVerificationServiceGrpc {
      * Perform signature verification of a UserSignature against the provided message.
      * </pre>
      */
-    default void verifySignature(SignatureVerificationServiceOuterClass.VerifySignatureRequest request,
-                                 io.grpc.stub.StreamObserver<SignatureVerificationServiceOuterClass.VerifySignatureResponse> responseObserver) {
+    default void verifySignature(sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getVerifySignatureMethod(), responseObserver);
     }
   }
@@ -111,7 +111,7 @@ public final class SignatureVerificationServiceGrpc {
   public static abstract class SignatureVerificationServiceImplBase
       implements io.grpc.BindableService, AsyncService {
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return SignatureVerificationServiceGrpc.bindService(this);
     }
   }
@@ -126,7 +126,7 @@ public final class SignatureVerificationServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected SignatureVerificationServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SignatureVerificationServiceStub(channel, callOptions);
@@ -137,8 +137,8 @@ public final class SignatureVerificationServiceGrpc {
      * Perform signature verification of a UserSignature against the provided message.
      * </pre>
      */
-    public void verifySignature(SignatureVerificationServiceOuterClass.VerifySignatureRequest request,
-                                io.grpc.stub.StreamObserver<SignatureVerificationServiceOuterClass.VerifySignatureResponse> responseObserver) {
+    public void verifySignature(sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getVerifySignatureMethod(), getCallOptions()), request, responseObserver);
     }
@@ -154,7 +154,7 @@ public final class SignatureVerificationServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected SignatureVerificationServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SignatureVerificationServiceBlockingStub(channel, callOptions);
@@ -165,7 +165,7 @@ public final class SignatureVerificationServiceGrpc {
      * Perform signature verification of a UserSignature against the provided message.
      * </pre>
      */
-    public SignatureVerificationServiceOuterClass.VerifySignatureResponse verifySignature(SignatureVerificationServiceOuterClass.VerifySignatureRequest request) {
+    public sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse verifySignature(sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getVerifySignatureMethod(), getCallOptions(), request);
     }
@@ -181,7 +181,7 @@ public final class SignatureVerificationServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected SignatureVerificationServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new SignatureVerificationServiceFutureStub(channel, callOptions);
@@ -192,8 +192,8 @@ public final class SignatureVerificationServiceGrpc {
      * Perform signature verification of a UserSignature against the provided message.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<SignatureVerificationServiceOuterClass.VerifySignatureResponse> verifySignature(
-        SignatureVerificationServiceOuterClass.VerifySignatureRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse> verifySignature(
+        sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getVerifySignatureMethod(), getCallOptions()), request);
     }
@@ -214,21 +214,21 @@ public final class SignatureVerificationServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_VERIFY_SIGNATURE:
-          serviceImpl.verifySignature((SignatureVerificationServiceOuterClass.VerifySignatureRequest) request,
-              (io.grpc.stub.StreamObserver<SignatureVerificationServiceOuterClass.VerifySignatureResponse>) responseObserver);
+          serviceImpl.verifySignature((sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -244,8 +244,8 @@ public final class SignatureVerificationServiceGrpc {
           getVerifySignatureMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              SignatureVerificationServiceOuterClass.VerifySignatureRequest,
-              SignatureVerificationServiceOuterClass.VerifySignatureResponse>(
+              sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureRequest,
+              sui.rpc.v2.SignatureVerificationServiceOuterClass.VerifySignatureResponse>(
                 service, METHODID_VERIFY_SIGNATURE)))
         .build();
   }
@@ -254,12 +254,12 @@ public final class SignatureVerificationServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     SignatureVerificationServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return SignatureVerificationServiceOuterClass.getDescriptor();
+      return sui.rpc.v2.SignatureVerificationServiceOuterClass.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("SignatureVerificationService");
     }
@@ -273,13 +273,13 @@ public final class SignatureVerificationServiceGrpc {
   private static final class SignatureVerificationServiceMethodDescriptorSupplier
       extends SignatureVerificationServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
+    private final java.lang.String methodName;
 
-    SignatureVerificationServiceMethodDescriptorSupplier(String methodName) {
+    SignatureVerificationServiceMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

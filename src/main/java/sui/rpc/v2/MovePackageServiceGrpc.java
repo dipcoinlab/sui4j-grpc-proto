@@ -12,32 +12,32 @@ public final class MovePackageServiceGrpc {
 
   private MovePackageServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "sui.rpc.v2.MovePackageService";
+  public static final java.lang.String SERVICE_NAME = "sui.rpc.v2.MovePackageService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetPackageRequest,
-      MovePackageServiceOuterClass.GetPackageResponse> getGetPackageMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse> getGetPackageMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetPackage",
-      requestType = MovePackageServiceOuterClass.GetPackageRequest.class,
-      responseType = MovePackageServiceOuterClass.GetPackageResponse.class,
+      requestType = sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest.class,
+      responseType = sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetPackageRequest,
-      MovePackageServiceOuterClass.GetPackageResponse> getGetPackageMethod() {
-    io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetPackageRequest, MovePackageServiceOuterClass.GetPackageResponse> getGetPackageMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse> getGetPackageMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest, sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse> getGetPackageMethod;
     if ((getGetPackageMethod = MovePackageServiceGrpc.getGetPackageMethod) == null) {
       synchronized (MovePackageServiceGrpc.class) {
         if ((getGetPackageMethod = MovePackageServiceGrpc.getGetPackageMethod) == null) {
           MovePackageServiceGrpc.getGetPackageMethod = getGetPackageMethod =
-              io.grpc.MethodDescriptor.<MovePackageServiceOuterClass.GetPackageRequest, MovePackageServiceOuterClass.GetPackageResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest, sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetPackage"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.GetPackageRequest.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.GetPackageResponse.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MovePackageServiceMethodDescriptorSupplier("GetPackage"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class MovePackageServiceGrpc {
     return getGetPackageMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetDatatypeRequest,
-      MovePackageServiceOuterClass.GetDatatypeResponse> getGetDatatypeMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse> getGetDatatypeMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetDatatype",
-      requestType = MovePackageServiceOuterClass.GetDatatypeRequest.class,
-      responseType = MovePackageServiceOuterClass.GetDatatypeResponse.class,
+      requestType = sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest.class,
+      responseType = sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetDatatypeRequest,
-      MovePackageServiceOuterClass.GetDatatypeResponse> getGetDatatypeMethod() {
-    io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetDatatypeRequest, MovePackageServiceOuterClass.GetDatatypeResponse> getGetDatatypeMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse> getGetDatatypeMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest, sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse> getGetDatatypeMethod;
     if ((getGetDatatypeMethod = MovePackageServiceGrpc.getGetDatatypeMethod) == null) {
       synchronized (MovePackageServiceGrpc.class) {
         if ((getGetDatatypeMethod = MovePackageServiceGrpc.getGetDatatypeMethod) == null) {
           MovePackageServiceGrpc.getGetDatatypeMethod = getGetDatatypeMethod =
-              io.grpc.MethodDescriptor.<MovePackageServiceOuterClass.GetDatatypeRequest, MovePackageServiceOuterClass.GetDatatypeResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest, sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetDatatype"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.GetDatatypeRequest.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.GetDatatypeResponse.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MovePackageServiceMethodDescriptorSupplier("GetDatatype"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class MovePackageServiceGrpc {
     return getGetDatatypeMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetFunctionRequest,
-      MovePackageServiceOuterClass.GetFunctionResponse> getGetFunctionMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse> getGetFunctionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetFunction",
-      requestType = MovePackageServiceOuterClass.GetFunctionRequest.class,
-      responseType = MovePackageServiceOuterClass.GetFunctionResponse.class,
+      requestType = sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest.class,
+      responseType = sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetFunctionRequest,
-      MovePackageServiceOuterClass.GetFunctionResponse> getGetFunctionMethod() {
-    io.grpc.MethodDescriptor<MovePackageServiceOuterClass.GetFunctionRequest, MovePackageServiceOuterClass.GetFunctionResponse> getGetFunctionMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse> getGetFunctionMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest, sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse> getGetFunctionMethod;
     if ((getGetFunctionMethod = MovePackageServiceGrpc.getGetFunctionMethod) == null) {
       synchronized (MovePackageServiceGrpc.class) {
         if ((getGetFunctionMethod = MovePackageServiceGrpc.getGetFunctionMethod) == null) {
           MovePackageServiceGrpc.getGetFunctionMethod = getGetFunctionMethod =
-              io.grpc.MethodDescriptor.<MovePackageServiceOuterClass.GetFunctionRequest, MovePackageServiceOuterClass.GetFunctionResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest, sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetFunction"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.GetFunctionRequest.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.GetFunctionResponse.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MovePackageServiceMethodDescriptorSupplier("GetFunction"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class MovePackageServiceGrpc {
     return getGetFunctionMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<MovePackageServiceOuterClass.ListPackageVersionsRequest,
-      MovePackageServiceOuterClass.ListPackageVersionsResponse> getListPackageVersionsMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse> getListPackageVersionsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ListPackageVersions",
-      requestType = MovePackageServiceOuterClass.ListPackageVersionsRequest.class,
-      responseType = MovePackageServiceOuterClass.ListPackageVersionsResponse.class,
+      requestType = sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest.class,
+      responseType = sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<MovePackageServiceOuterClass.ListPackageVersionsRequest,
-      MovePackageServiceOuterClass.ListPackageVersionsResponse> getListPackageVersionsMethod() {
-    io.grpc.MethodDescriptor<MovePackageServiceOuterClass.ListPackageVersionsRequest, MovePackageServiceOuterClass.ListPackageVersionsResponse> getListPackageVersionsMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest,
+      sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse> getListPackageVersionsMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest, sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse> getListPackageVersionsMethod;
     if ((getListPackageVersionsMethod = MovePackageServiceGrpc.getListPackageVersionsMethod) == null) {
       synchronized (MovePackageServiceGrpc.class) {
         if ((getListPackageVersionsMethod = MovePackageServiceGrpc.getListPackageVersionsMethod) == null) {
           MovePackageServiceGrpc.getListPackageVersionsMethod = getListPackageVersionsMethod =
-              io.grpc.MethodDescriptor.<MovePackageServiceOuterClass.ListPackageVersionsRequest, MovePackageServiceOuterClass.ListPackageVersionsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest, sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListPackageVersions"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.ListPackageVersionsRequest.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  MovePackageServiceOuterClass.ListPackageVersionsResponse.getDefaultInstance()))
+                  sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MovePackageServiceMethodDescriptorSupplier("ListPackageVersions"))
               .build();
         }
@@ -145,7 +145,7 @@ public final class MovePackageServiceGrpc {
   public static MovePackageServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<MovePackageServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<MovePackageServiceStub>() {
-        @Override
+        @java.lang.Override
         public MovePackageServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new MovePackageServiceStub(channel, callOptions);
         }
@@ -160,7 +160,7 @@ public final class MovePackageServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<MovePackageServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<MovePackageServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public MovePackageServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new MovePackageServiceBlockingStub(channel, callOptions);
         }
@@ -175,7 +175,7 @@ public final class MovePackageServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<MovePackageServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<MovePackageServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public MovePackageServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new MovePackageServiceFutureStub(channel, callOptions);
         }
@@ -189,29 +189,29 @@ public final class MovePackageServiceGrpc {
 
     /**
      */
-    default void getPackage(MovePackageServiceOuterClass.GetPackageRequest request,
-                            io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetPackageResponse> responseObserver) {
+    default void getPackage(sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetPackageMethod(), responseObserver);
     }
 
     /**
      */
-    default void getDatatype(MovePackageServiceOuterClass.GetDatatypeRequest request,
-                             io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetDatatypeResponse> responseObserver) {
+    default void getDatatype(sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetDatatypeMethod(), responseObserver);
     }
 
     /**
      */
-    default void getFunction(MovePackageServiceOuterClass.GetFunctionRequest request,
-                             io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetFunctionResponse> responseObserver) {
+    default void getFunction(sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetFunctionMethod(), responseObserver);
     }
 
     /**
      */
-    default void listPackageVersions(MovePackageServiceOuterClass.ListPackageVersionsRequest request,
-                                     io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.ListPackageVersionsResponse> responseObserver) {
+    default void listPackageVersions(sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListPackageVersionsMethod(), responseObserver);
     }
   }
@@ -222,7 +222,7 @@ public final class MovePackageServiceGrpc {
   public static abstract class MovePackageServiceImplBase
       implements io.grpc.BindableService, AsyncService {
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return MovePackageServiceGrpc.bindService(this);
     }
   }
@@ -237,7 +237,7 @@ public final class MovePackageServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected MovePackageServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new MovePackageServiceStub(channel, callOptions);
@@ -245,32 +245,32 @@ public final class MovePackageServiceGrpc {
 
     /**
      */
-    public void getPackage(MovePackageServiceOuterClass.GetPackageRequest request,
-                           io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetPackageResponse> responseObserver) {
+    public void getPackage(sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetPackageMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getDatatype(MovePackageServiceOuterClass.GetDatatypeRequest request,
-                            io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetDatatypeResponse> responseObserver) {
+    public void getDatatype(sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetDatatypeMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getFunction(MovePackageServiceOuterClass.GetFunctionRequest request,
-                            io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetFunctionResponse> responseObserver) {
+    public void getFunction(sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetFunctionMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void listPackageVersions(MovePackageServiceOuterClass.ListPackageVersionsRequest request,
-                                    io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.ListPackageVersionsResponse> responseObserver) {
+    public void listPackageVersions(sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListPackageVersionsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -286,7 +286,7 @@ public final class MovePackageServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected MovePackageServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new MovePackageServiceBlockingStub(channel, callOptions);
@@ -294,28 +294,28 @@ public final class MovePackageServiceGrpc {
 
     /**
      */
-    public MovePackageServiceOuterClass.GetPackageResponse getPackage(MovePackageServiceOuterClass.GetPackageRequest request) {
+    public sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse getPackage(sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetPackageMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public MovePackageServiceOuterClass.GetDatatypeResponse getDatatype(MovePackageServiceOuterClass.GetDatatypeRequest request) {
+    public sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse getDatatype(sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetDatatypeMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public MovePackageServiceOuterClass.GetFunctionResponse getFunction(MovePackageServiceOuterClass.GetFunctionRequest request) {
+    public sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse getFunction(sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetFunctionMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public MovePackageServiceOuterClass.ListPackageVersionsResponse listPackageVersions(MovePackageServiceOuterClass.ListPackageVersionsRequest request) {
+    public sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse listPackageVersions(sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListPackageVersionsMethod(), getCallOptions(), request);
     }
@@ -331,7 +331,7 @@ public final class MovePackageServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected MovePackageServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new MovePackageServiceFutureStub(channel, callOptions);
@@ -339,32 +339,32 @@ public final class MovePackageServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<MovePackageServiceOuterClass.GetPackageResponse> getPackage(
-        MovePackageServiceOuterClass.GetPackageRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse> getPackage(
+        sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetPackageMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<MovePackageServiceOuterClass.GetDatatypeResponse> getDatatype(
-        MovePackageServiceOuterClass.GetDatatypeRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse> getDatatype(
+        sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetDatatypeMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<MovePackageServiceOuterClass.GetFunctionResponse> getFunction(
-        MovePackageServiceOuterClass.GetFunctionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse> getFunction(
+        sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetFunctionMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<MovePackageServiceOuterClass.ListPackageVersionsResponse> listPackageVersions(
-        MovePackageServiceOuterClass.ListPackageVersionsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse> listPackageVersions(
+        sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListPackageVersionsMethod(), getCallOptions()), request);
     }
@@ -388,33 +388,33 @@ public final class MovePackageServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_PACKAGE:
-          serviceImpl.getPackage((MovePackageServiceOuterClass.GetPackageRequest) request,
-              (io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetPackageResponse>) responseObserver);
+          serviceImpl.getPackage((sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse>) responseObserver);
           break;
         case METHODID_GET_DATATYPE:
-          serviceImpl.getDatatype((MovePackageServiceOuterClass.GetDatatypeRequest) request,
-              (io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetDatatypeResponse>) responseObserver);
+          serviceImpl.getDatatype((sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse>) responseObserver);
           break;
         case METHODID_GET_FUNCTION:
-          serviceImpl.getFunction((MovePackageServiceOuterClass.GetFunctionRequest) request,
-              (io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.GetFunctionResponse>) responseObserver);
+          serviceImpl.getFunction((sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse>) responseObserver);
           break;
         case METHODID_LIST_PACKAGE_VERSIONS:
-          serviceImpl.listPackageVersions((MovePackageServiceOuterClass.ListPackageVersionsRequest) request,
-              (io.grpc.stub.StreamObserver<MovePackageServiceOuterClass.ListPackageVersionsResponse>) responseObserver);
+          serviceImpl.listPackageVersions((sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -430,29 +430,29 @@ public final class MovePackageServiceGrpc {
           getGetPackageMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              MovePackageServiceOuterClass.GetPackageRequest,
-              MovePackageServiceOuterClass.GetPackageResponse>(
+              sui.rpc.v2.MovePackageServiceOuterClass.GetPackageRequest,
+              sui.rpc.v2.MovePackageServiceOuterClass.GetPackageResponse>(
                 service, METHODID_GET_PACKAGE)))
         .addMethod(
           getGetDatatypeMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              MovePackageServiceOuterClass.GetDatatypeRequest,
-              MovePackageServiceOuterClass.GetDatatypeResponse>(
+              sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeRequest,
+              sui.rpc.v2.MovePackageServiceOuterClass.GetDatatypeResponse>(
                 service, METHODID_GET_DATATYPE)))
         .addMethod(
           getGetFunctionMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              MovePackageServiceOuterClass.GetFunctionRequest,
-              MovePackageServiceOuterClass.GetFunctionResponse>(
+              sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionRequest,
+              sui.rpc.v2.MovePackageServiceOuterClass.GetFunctionResponse>(
                 service, METHODID_GET_FUNCTION)))
         .addMethod(
           getListPackageVersionsMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              MovePackageServiceOuterClass.ListPackageVersionsRequest,
-              MovePackageServiceOuterClass.ListPackageVersionsResponse>(
+              sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsRequest,
+              sui.rpc.v2.MovePackageServiceOuterClass.ListPackageVersionsResponse>(
                 service, METHODID_LIST_PACKAGE_VERSIONS)))
         .build();
   }
@@ -461,12 +461,12 @@ public final class MovePackageServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     MovePackageServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return MovePackageServiceOuterClass.getDescriptor();
+      return sui.rpc.v2.MovePackageServiceOuterClass.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("MovePackageService");
     }
@@ -480,13 +480,13 @@ public final class MovePackageServiceGrpc {
   private static final class MovePackageServiceMethodDescriptorSupplier
       extends MovePackageServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
+    private final java.lang.String methodName;
 
-    MovePackageServiceMethodDescriptorSupplier(String methodName) {
+    MovePackageServiceMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

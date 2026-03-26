@@ -12,32 +12,32 @@ public final class NameServiceGrpc {
 
   private NameServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "sui.rpc.v2.NameService";
+  public static final java.lang.String SERVICE_NAME = "sui.rpc.v2.NameService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<NameServiceOuterClass.LookupNameRequest,
-      NameServiceOuterClass.LookupNameResponse> getLookupNameMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.NameServiceOuterClass.LookupNameRequest,
+      sui.rpc.v2.NameServiceOuterClass.LookupNameResponse> getLookupNameMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "LookupName",
-      requestType = NameServiceOuterClass.LookupNameRequest.class,
-      responseType = NameServiceOuterClass.LookupNameResponse.class,
+      requestType = sui.rpc.v2.NameServiceOuterClass.LookupNameRequest.class,
+      responseType = sui.rpc.v2.NameServiceOuterClass.LookupNameResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<NameServiceOuterClass.LookupNameRequest,
-      NameServiceOuterClass.LookupNameResponse> getLookupNameMethod() {
-    io.grpc.MethodDescriptor<NameServiceOuterClass.LookupNameRequest, NameServiceOuterClass.LookupNameResponse> getLookupNameMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.NameServiceOuterClass.LookupNameRequest,
+      sui.rpc.v2.NameServiceOuterClass.LookupNameResponse> getLookupNameMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.NameServiceOuterClass.LookupNameRequest, sui.rpc.v2.NameServiceOuterClass.LookupNameResponse> getLookupNameMethod;
     if ((getLookupNameMethod = NameServiceGrpc.getLookupNameMethod) == null) {
       synchronized (NameServiceGrpc.class) {
         if ((getLookupNameMethod = NameServiceGrpc.getLookupNameMethod) == null) {
           NameServiceGrpc.getLookupNameMethod = getLookupNameMethod =
-              io.grpc.MethodDescriptor.<NameServiceOuterClass.LookupNameRequest, NameServiceOuterClass.LookupNameResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.NameServiceOuterClass.LookupNameRequest, sui.rpc.v2.NameServiceOuterClass.LookupNameResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "LookupName"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  NameServiceOuterClass.LookupNameRequest.getDefaultInstance()))
+                  sui.rpc.v2.NameServiceOuterClass.LookupNameRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  NameServiceOuterClass.LookupNameResponse.getDefaultInstance()))
+                  sui.rpc.v2.NameServiceOuterClass.LookupNameResponse.getDefaultInstance()))
               .setSchemaDescriptor(new NameServiceMethodDescriptorSupplier("LookupName"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class NameServiceGrpc {
     return getLookupNameMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<NameServiceOuterClass.ReverseLookupNameRequest,
-      NameServiceOuterClass.ReverseLookupNameResponse> getReverseLookupNameMethod;
+  private static volatile io.grpc.MethodDescriptor<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest,
+      sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse> getReverseLookupNameMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ReverseLookupName",
-      requestType = NameServiceOuterClass.ReverseLookupNameRequest.class,
-      responseType = NameServiceOuterClass.ReverseLookupNameResponse.class,
+      requestType = sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest.class,
+      responseType = sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<NameServiceOuterClass.ReverseLookupNameRequest,
-      NameServiceOuterClass.ReverseLookupNameResponse> getReverseLookupNameMethod() {
-    io.grpc.MethodDescriptor<NameServiceOuterClass.ReverseLookupNameRequest, NameServiceOuterClass.ReverseLookupNameResponse> getReverseLookupNameMethod;
+  public static io.grpc.MethodDescriptor<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest,
+      sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse> getReverseLookupNameMethod() {
+    io.grpc.MethodDescriptor<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest, sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse> getReverseLookupNameMethod;
     if ((getReverseLookupNameMethod = NameServiceGrpc.getReverseLookupNameMethod) == null) {
       synchronized (NameServiceGrpc.class) {
         if ((getReverseLookupNameMethod = NameServiceGrpc.getReverseLookupNameMethod) == null) {
           NameServiceGrpc.getReverseLookupNameMethod = getReverseLookupNameMethod =
-              io.grpc.MethodDescriptor.<NameServiceOuterClass.ReverseLookupNameRequest, NameServiceOuterClass.ReverseLookupNameResponse>newBuilder()
+              io.grpc.MethodDescriptor.<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest, sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ReverseLookupName"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  NameServiceOuterClass.ReverseLookupNameRequest.getDefaultInstance()))
+                  sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  NameServiceOuterClass.ReverseLookupNameResponse.getDefaultInstance()))
+                  sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse.getDefaultInstance()))
               .setSchemaDescriptor(new NameServiceMethodDescriptorSupplier("ReverseLookupName"))
               .build();
         }
@@ -83,7 +83,7 @@ public final class NameServiceGrpc {
   public static NameServiceStub newStub(io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<NameServiceStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<NameServiceStub>() {
-        @Override
+        @java.lang.Override
         public NameServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new NameServiceStub(channel, callOptions);
         }
@@ -98,7 +98,7 @@ public final class NameServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<NameServiceBlockingStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<NameServiceBlockingStub>() {
-        @Override
+        @java.lang.Override
         public NameServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new NameServiceBlockingStub(channel, callOptions);
         }
@@ -113,7 +113,7 @@ public final class NameServiceGrpc {
       io.grpc.Channel channel) {
     io.grpc.stub.AbstractStub.StubFactory<NameServiceFutureStub> factory =
       new io.grpc.stub.AbstractStub.StubFactory<NameServiceFutureStub>() {
-        @Override
+        @java.lang.Override
         public NameServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
           return new NameServiceFutureStub(channel, callOptions);
         }
@@ -127,15 +127,15 @@ public final class NameServiceGrpc {
 
     /**
      */
-    default void lookupName(NameServiceOuterClass.LookupNameRequest request,
-                            io.grpc.stub.StreamObserver<NameServiceOuterClass.LookupNameResponse> responseObserver) {
+    default void lookupName(sui.rpc.v2.NameServiceOuterClass.LookupNameRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.NameServiceOuterClass.LookupNameResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getLookupNameMethod(), responseObserver);
     }
 
     /**
      */
-    default void reverseLookupName(NameServiceOuterClass.ReverseLookupNameRequest request,
-                                   io.grpc.stub.StreamObserver<NameServiceOuterClass.ReverseLookupNameResponse> responseObserver) {
+    default void reverseLookupName(sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getReverseLookupNameMethod(), responseObserver);
     }
   }
@@ -146,7 +146,7 @@ public final class NameServiceGrpc {
   public static abstract class NameServiceImplBase
       implements io.grpc.BindableService, AsyncService {
 
-    @Override public final io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return NameServiceGrpc.bindService(this);
     }
   }
@@ -161,7 +161,7 @@ public final class NameServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected NameServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new NameServiceStub(channel, callOptions);
@@ -169,16 +169,16 @@ public final class NameServiceGrpc {
 
     /**
      */
-    public void lookupName(NameServiceOuterClass.LookupNameRequest request,
-                           io.grpc.stub.StreamObserver<NameServiceOuterClass.LookupNameResponse> responseObserver) {
+    public void lookupName(sui.rpc.v2.NameServiceOuterClass.LookupNameRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.NameServiceOuterClass.LookupNameResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getLookupNameMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void reverseLookupName(NameServiceOuterClass.ReverseLookupNameRequest request,
-                                  io.grpc.stub.StreamObserver<NameServiceOuterClass.ReverseLookupNameResponse> responseObserver) {
+    public void reverseLookupName(sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest request,
+        io.grpc.stub.StreamObserver<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getReverseLookupNameMethod(), getCallOptions()), request, responseObserver);
     }
@@ -194,7 +194,7 @@ public final class NameServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected NameServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new NameServiceBlockingStub(channel, callOptions);
@@ -202,14 +202,14 @@ public final class NameServiceGrpc {
 
     /**
      */
-    public NameServiceOuterClass.LookupNameResponse lookupName(NameServiceOuterClass.LookupNameRequest request) {
+    public sui.rpc.v2.NameServiceOuterClass.LookupNameResponse lookupName(sui.rpc.v2.NameServiceOuterClass.LookupNameRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getLookupNameMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public NameServiceOuterClass.ReverseLookupNameResponse reverseLookupName(NameServiceOuterClass.ReverseLookupNameRequest request) {
+    public sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse reverseLookupName(sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getReverseLookupNameMethod(), getCallOptions(), request);
     }
@@ -225,7 +225,7 @@ public final class NameServiceGrpc {
       super(channel, callOptions);
     }
 
-    @Override
+    @java.lang.Override
     protected NameServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new NameServiceFutureStub(channel, callOptions);
@@ -233,16 +233,16 @@ public final class NameServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<NameServiceOuterClass.LookupNameResponse> lookupName(
-        NameServiceOuterClass.LookupNameRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.NameServiceOuterClass.LookupNameResponse> lookupName(
+        sui.rpc.v2.NameServiceOuterClass.LookupNameRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getLookupNameMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<NameServiceOuterClass.ReverseLookupNameResponse> reverseLookupName(
-        NameServiceOuterClass.ReverseLookupNameRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse> reverseLookupName(
+        sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getReverseLookupNameMethod(), getCallOptions()), request);
     }
@@ -264,25 +264,25 @@ public final class NameServiceGrpc {
       this.methodId = methodId;
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_LOOKUP_NAME:
-          serviceImpl.lookupName((NameServiceOuterClass.LookupNameRequest) request,
-              (io.grpc.stub.StreamObserver<NameServiceOuterClass.LookupNameResponse>) responseObserver);
+          serviceImpl.lookupName((sui.rpc.v2.NameServiceOuterClass.LookupNameRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.NameServiceOuterClass.LookupNameResponse>) responseObserver);
           break;
         case METHODID_REVERSE_LOOKUP_NAME:
-          serviceImpl.reverseLookupName((NameServiceOuterClass.ReverseLookupNameRequest) request,
-              (io.grpc.stub.StreamObserver<NameServiceOuterClass.ReverseLookupNameResponse>) responseObserver);
+          serviceImpl.reverseLookupName((sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest) request,
+              (io.grpc.stub.StreamObserver<sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @Override
-    @SuppressWarnings("unchecked")
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -298,15 +298,15 @@ public final class NameServiceGrpc {
           getLookupNameMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              NameServiceOuterClass.LookupNameRequest,
-              NameServiceOuterClass.LookupNameResponse>(
+              sui.rpc.v2.NameServiceOuterClass.LookupNameRequest,
+              sui.rpc.v2.NameServiceOuterClass.LookupNameResponse>(
                 service, METHODID_LOOKUP_NAME)))
         .addMethod(
           getReverseLookupNameMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              NameServiceOuterClass.ReverseLookupNameRequest,
-              NameServiceOuterClass.ReverseLookupNameResponse>(
+              sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameRequest,
+              sui.rpc.v2.NameServiceOuterClass.ReverseLookupNameResponse>(
                 service, METHODID_REVERSE_LOOKUP_NAME)))
         .build();
   }
@@ -315,12 +315,12 @@ public final class NameServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     NameServiceBaseDescriptorSupplier() {}
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return NameServiceOuterClass.getDescriptor();
+      return sui.rpc.v2.NameServiceOuterClass.getDescriptor();
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("NameService");
     }
@@ -334,13 +334,13 @@ public final class NameServiceGrpc {
   private static final class NameServiceMethodDescriptorSupplier
       extends NameServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
-    private final String methodName;
+    private final java.lang.String methodName;
 
-    NameServiceMethodDescriptorSupplier(String methodName) {
+    NameServiceMethodDescriptorSupplier(java.lang.String methodName) {
       this.methodName = methodName;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
