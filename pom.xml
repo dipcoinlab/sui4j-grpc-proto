@@ -6,7 +6,7 @@
 
     <groupId>io.dipcoin</groupId>
     <artifactId>sui4j-grpc-proto</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>sui4j-grpc-proto</name>
     <description>ProtoBuf definitions and generated Java sources for sui4j gRPC interfaces.</description>
     <url>https://github.com/dipcoinlab/sui4j-grpc-proto</url>
